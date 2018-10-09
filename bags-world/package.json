@@ -1,0 +1,22 @@
+{
+  "name": "bags-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:less": "lessc main.less style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kam773/bag-shop-website.git"
+  },
+  "author": "Kamil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kam773/bag-shop-website/issues"
+  },
+  "homepage": "https://github.com/kam773/bag-shop-website#readme",
+  "devDependencies": {
+    "less": "^3.8.1"
+  }
+}

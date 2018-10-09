@@ -1,0 +1,30 @@
+{
+  "name": "nava",
+  "version": "1.0.0",
+  "description": "nava website",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kam773/nova-website.git"
+  },
+  "author": "Kamil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kam773/nova-website/issues"
+  },
+  "homepage": "https://github.com/kam773/nova-website/"
+}

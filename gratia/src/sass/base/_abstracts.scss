@@ -1,0 +1,105 @@
+.details {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../../img/bg-small-image.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.box {
+    width: 50rem;
+    height: 28rem;
+    background-color: $color-white;
+    @include absCenter;
+
+    @include respond(tab-land) {
+        width: 50rem;
+        height: 28rem;
+    }
+
+    @include respond(phone) {
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
+.content-wrapper {
+    border: 1px solid $color-line;
+    width: 44rem;
+    height: 22rem;
+    @include absCenter;
+
+    @include respond(phone) {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+.text-wrapper {
+    margin-top: 8rem;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid $color-line;
+    width: 15rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+}
+
+.text-wrapper-menu {
+    margin: 18rem 0;
+    position: relative;
+}
+
+.text-wrapper-perfection,
+.text-wrapper-description {
+    margin: 10rem 0;
+    position: relative;
+}
+
+input {
+    border-radius: 3px;
+    padding: 1rem 0;
+}
+
+input::placeholder {
+   text-align: center; 
+}
+
+textarea::placeholder {
+    padding: 1rem 2rem;
+}
+
+.text img {
+    width: 30%;
+    height: auto;
+    @include absCenter;
+}
+
+.text-white {
+    color: $color-white;
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text-overlay.center {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-arrow {
+    margin-left: 23rem;
+
+    @include respond(phone) {
+        margin-left: 0;
+        
+    }
+}

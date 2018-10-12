@@ -68,13 +68,13 @@
 
     @include respond(tab-port) {
         flex-direction: column;
-        margin-top: 2rem;
+        justify-content: flex-start;
         height: 100%;
     }
 
     @include respond(phone) {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         height: 100%;
     
     }
@@ -91,7 +91,7 @@
 
     @include respond(phone) {
         height: 115rem;
-    
+        
     }
 
 }
@@ -120,7 +120,7 @@
     }
 
     @include respond(tab-port) {
-        width: 50rem;
+        width: 60rem;
         height: 40rem;      
     }
 

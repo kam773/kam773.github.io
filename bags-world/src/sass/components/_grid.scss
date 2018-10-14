@@ -3,13 +3,34 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 26rem 26rem;
     margin-top: 4rem;
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 26rem);
+       
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 26rem);
+       
+    }
 }
 
 .grid-item-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-
     overflow: hidden;
+
+    @include respond(tab-port) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 }
 
 .grid-item-2 {
@@ -18,28 +39,78 @@
     width: 100%;
     height: 26rem;
     background-color: rgb(249, 181, 206);
+
+    @include respond(tab-port) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 }
 
 .grid-item-3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     overflow: hidden;
+
+    @include respond(tab-port) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
 }
 
 .grid-item-4 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background-color: rgb(242, 159, 147);
+
+    @include respond(tab-port) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
 }
 
 .grid-item-5 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     overflow: hidden;
+
+    @include respond(tab-port) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
 }
 
 .grid-item-6 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-color: rgb(233, 211, 101);
+
+    @include respond(tab-port) {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    @include respond(phone) {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
 }

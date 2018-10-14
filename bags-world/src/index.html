@@ -16,27 +16,7 @@
   </head>
   <body>
   <div class="page">
-    <div class="bg-white">
-            <div class="modal" id="myModal">            
-                    <div class="modal-body">                        
-                            <a class="btn btn-danger pull-right" data-dismiss="modal">X</a>           
-                      <h3 class="popup-title">NEWSLETTER SIGNUP</h3>
-                       <p class="popup-text">Subscribe to be the first to know about Sales, Events, and Exclusive Offers!</p>
-                     <form style="margin-left: 15px;" class="form-horizontal">
-                        <div class="form-group">
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your email address">
-                          </div>                       
-                        </div>                
-                       
-                        <div class="form-group">
-                          <div class="col-sm-10">
-                            <button type="submit" class="btn btn-pink">SUBSCRIBE</button>
-                          </div>
-                        </div>
-                      </form>                     
-                    </div>            
-            </div>
+    <div class="bg-white">           
         <div class="container">
             <div class="row">
                     <div class="col-12 col-md-3">
@@ -103,7 +83,7 @@
                 </div>
                 <!--row end-->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md">
                             <nav class="navbar navbar-expand-lg navbar-dark bg-pink">
                                   
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -694,68 +674,51 @@
            <!-- row end-->
            <div class="row">
                <div class="col-md-12">
-                    <div class="slider-testimonials">
-
-                        <div class="slide-testimonial">
-                            <div class="wrapper-testimonial">
-                                <div class="testimonial-img">
-                                    <img src="img/testimonials-img1.jpg" alt="Photo 1">
+                   <div class="carousel-testimonial">
+                        <div class="carousel slide" id="my-carousel" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                        <li data-target="#my-carousel" data-slide-to="0"></li>
+                                        <li data-target="#my-carousel" data-slide-to="1" class="active"></li>
+                                        <li data-target="#my-carousel" data-slide-to="2"></li>
+                                </ol>
+                                                            
+                                <div class="carousel-inner">
+                                  <div class="carousel-item text-center">
+                                    <div class="img-box border rounded-circle m-auto box-1">
+                                   
+                                    </div>
+                                    <h5 class="py-1 my-1"> <strong class="text-warning text-uppercase">Michele Smith</strong></h5>
+                                    <h6 class="text-dark m-1">CEO <br> <strong>XYZ Software</strong></h6>
+                                    <p class="pt-3 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, fuga. Lorem ipsum dolor sit amet.</p>
+                                  </div>
+                                   <div class="carousel-item text-center active">
+                                      <div class="img-box border rounded-circle m-auto box-2">
+                                     
+                                    </div>
+                                    <h5 class="py-1 my-1"> <strong class="text-warning text-uppercase">Sam Smith</strong></h5>
+                                    <h6 class="text-dark m-1"><strong>Web Developer</strong></h6>
+                                   <p class="pt-3 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, fuga. Lorem ipsum dolor sit amet.</p>
+                                  </div>
+                                   <div class="carousel-item text-center">
+                                     <div class="img-box border rounded-circle m-auto box-3">                     
+                                    </div>
+                                    <h5 class="py-1 my-1"> <strong class="text-warning text-uppercase">Joana Doe</strong></h5>
+                                    <h6 class="text-dark m-1">Creative Director <br><strong>ABC Arts</strong></h6>
+                                    <p class="pt-3 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, fuga. Lorem ipsum dolor sit amet.</p>
+                                  </div>
                                 </div>
-                                <div class="testimonial">
-                                    <p class="quote">Nam ceteros accusamus consulatu an, quas blandit officiis sed id, tota insolens per ne. Eu iuvaret theophrastus
-                                     mediocritatem per. Utroque mandamus id quo, ea vim quot reprimique concludaturque. Assum iusto similique vis ne. Soleat eruditi
-                                     deterruisset ut eam, pri id posse idque etiam, in legimus volutpat voluptatibus sea.. .</p>
-                                    <div class="holder-info"> <strong class="name">Vince Roy</strong> <br> <strong class="designation">CEO, XYZ Softwear</strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-testimonial">
-                                <div class="testimonial-img">
-                                        <img src="img/testimonials-img2.jpg" alt="Photo 1">
-                                </div>
-                                <div class="testimonial">
-                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur. .</p>
-                                        <div class="holder-info"><strong class="name">John Doe</strong> <br> <strong class="designation">CEO, ABC Softwear</strong></div>
-                                </div>
-                        </div>
-                        <div class="slide-testimonial">
-                                <div class="testimonial-img">
-                                        <img src="img/testimonials-img3.jpg" alt="Photo 1">
-                                </div>
-                                <div class="testimonial">
-                                        <p class="quote">Cetero verear mea at, ius soleat adipisci accusamus eu. Periculis gloriatur nec ad. Id vix aliquip recteque
-                                        intellegebat, ridens possim duo no, ad duo debet scaevola necessitatibus. Qui esse laboramus eu. Nam in tempor albucius,
-                                        et eos ullum consequuntur, no ludus graecis propriae nam.. .</p>
-                                        <div class="holder-info"> <strong class="name">Vince Roy</strong> <br> <strong class="designation">CEO, XYZ Softwear</strong></div>
-                                </div>
-                        </div>
-                        <div class="slide-testimonial">
-                                <div class="testimonial-img">
-                                        <img src="img/testimonials-img4.jpg" alt="Photo 1">
-                                </div>
-                                <div class="testimonial">
-                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur. .</p>
-                                        <div class="holder-info"><strong class="name">John Doe</strong> <br> <strong class="designation">CEO, ABC Softwear</strong></div>
-                                </div>
-                        </div>
-                        <div class="slide-testimonial">
-                                <div class="testimonial-img">
-                                        <img src="img/testimonials-img5.jpg" alt="Photo 1">
-                                </div>
-                                <div class="testimonial">
-                                        <p class="quote">Tibique perfecto nam ut. Usu ut nisl elit elaboraret, diceret sadipscing usu ea. Qui in quod
-                                        ferri signiferumque. Doming verterem principes sed ne, salutatus eloquentiam ea quo, ea vel choro vocent. Meis
-                                        debitis molestie his ad. Ut prompta accusam eum, pri ne fuisset corrumpit evertitur, virtute omnesque vim no.. .</p>
-                                        <div class="holder-info"> <strong class="name">Vince Roy</strong> <br> <strong class="designation">CEO, XYZ Softwear</strong></div>
-                                </div>
-                        </div>
-                    </div>
+                                  
+                                  <a href="#my-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                   <a href="#my-carousel" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                              </div>
+                   </div>
+                   
                </div>
            </div>
             <!-- row end-->

@@ -26,12 +26,29 @@
     list-style: none;
 }
 
-.social-item {
+.social-item  {
     display: inline-block;
-    width: 4.4rem;
-    height: 4.4rem;
-    margin: 0 .5rem;
+   
+
+    & img {
+        width: 4.4rem;
+        height: 4.4rem;
+        margin: 0 .5rem;
+    }
+
+    @include respond(tab-port) {
+        width: 4rem;
+        height: 4rem;
+        margin: .5rem 1rem;
+    }
+    @include respond(phone) {
+        width: 3rem;
+        height: 3rem;
+        margin: .5rem 1rem;
+    }
 }
+
+
 
 .contact-list {
     list-style: none;

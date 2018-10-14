@@ -1,17 +1,45 @@
 .flexbox {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 3rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .flex-item {
     border: 1px solid #e5e5e5;
-    display: inline-block;
     background-color: $color-white;
     height: 40rem;
     width: 24%;  
     position: relative;
+
+    @include respond(tab-port) {
+       align-self: center;
+       width: 50%; 
+       text-align: center;
+    
+    }
+
+    @include respond(phone) {
+        align-self: center;
+        width: 70%; 
+        text-align: center;
+       
+    }
 }
 
 .item-img {
@@ -19,12 +47,34 @@
     height: 24rem;
     padding: 1rem;
     transition: all .5s ease;
+
+    @include respond(tab-port) {
+        width: 20rem;
+        height: 20rem;
+    }
+ 
+     @include respond(phone) {
+        width: 16rem;
+        height: 16rem;
+        
+    }
+ 
 }
 
 .banner {
     overflow: hidden;
     width: 32%;
     position: relative;
+
+    @include respond(tab-port) {
+        width: 90%; 
+        align-self: center;      
+    }
+ 
+    @include respond(phone) {      
+        width: 90%; 
+        align-self: center;
+    }
 }
 
 .banner > img {
@@ -32,6 +82,14 @@
     width: 100%;
     background-position: top;
 
+    @include respond(tab-port) {
+        background-position: center;
+
+    }
+ 
+    @include respond(phone) {      
+        background-position: center;
+    }
 }
 
 .banner-photo {
@@ -64,3 +122,16 @@
     font-weight: 600;
 }
 
+.flex-item-sellers {
+    display: flex;
+    flex-direction: column;
+    @include respond(tab-port) {
+       justify-content: center;
+       align-items: center;
+    }
+ 
+    @include respond(phone) {   
+        justify-content: center;   
+        align-items: center;
+    }
+}

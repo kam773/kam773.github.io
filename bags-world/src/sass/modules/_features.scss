@@ -20,6 +20,15 @@
     top: 30%;
     left: 10%;
     text-align: center;
+
+    @include respond(tab-port) {
+        top: 20%;
+    }
+
+    @include respond(phone) {
+        top: 20%;
+        width: 80%;
+    }
 }
 
 .description-name {
@@ -29,6 +38,15 @@
     line-height: 1.5;
     font-size: 1.6rem;
 
+    @include respond(tab-port) {
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    @include respond(phone) {
+        width: 40%;
+        margin-left: 0;
+    }
 }
 
 .text-overlayed {
@@ -40,4 +58,18 @@
     letter-spacing: 1px;
     font-size: 1.4rem;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+        width: 70%;
+        margin-left: 1rem;
+    }
+
+    @media(max-width: 768px) {
+        width: 30%;
+    }
+
+    @include respond(phone) {
+        width: 40%;
+        margin-left: 0;
+    }
 }

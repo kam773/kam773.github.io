@@ -20,4 +20,8 @@
     font-size: 1.4rem;
     color: #555;
 
+    @include respond(phone) {
+       display: none;
+    }
+
 }

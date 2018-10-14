@@ -3,6 +3,17 @@
     top: 40%;
     left: 14%;
     transition: all .5s ease;
+
+    @include respond(tab-port) {
+        top: 35%;
+        left: 22%;
+    }
+ 
+    @include respond(phone) {
+        top: 35%;
+        left: 23%;
+     
+    }
      
 }
 

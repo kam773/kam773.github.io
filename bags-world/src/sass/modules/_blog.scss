@@ -1,0 +1,22 @@
+.blog-entry {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    overflow: hidden;
+    font-size: 1.6rem
+}
+
+.blog-entry__title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px; 
+}
+
+.blog-text {
+    margin-left: 15px;
+    margin-top: 20px; 
+}
+

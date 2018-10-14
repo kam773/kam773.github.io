@@ -1,22 +1,21 @@
 {
   "name": "bags-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bags world website",
+  "main": "gulpfile.js",
   "scripts": {
-    "compile:less": "lessc main.less style.css -w"
+    "start": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kam773/bag-shop-website.git"
-  },
-  "author": "Kamil",
+  "author": "Kamil SMas",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kam773/bag-shop-website/issues"
-  },
-  "homepage": "https://github.com/kam773/bag-shop-website#readme",
   "devDependencies": {
-    "less": "^3.8.1"
+    "browser-sync": "^2.26.0",
+    "eslint": "^5.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3"
   }
 }

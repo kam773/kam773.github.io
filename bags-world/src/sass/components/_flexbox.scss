@@ -1,0 +1,66 @@
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.flex-item {
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    background-color: $color-white;
+    height: 40rem;
+    width: 24%;  
+    position: relative;
+}
+
+.item-img {
+    width: 24rem;
+    height: 24rem;
+    padding: 1rem;
+    transition: all .5s ease;
+}
+
+.banner {
+    overflow: hidden;
+    width: 32%;
+    position: relative;
+}
+
+.banner > img {
+    height: 100%;
+    width: 100%;
+    background-position: top;
+
+}
+
+.banner-photo {
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+.banner:hover .banner-photo {
+    transform: scale(1.1);
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: left;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-text span {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+.banner-text h3 {
+    padding-top: 2rem;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+

@@ -1,0 +1,30 @@
+/* Color Variables */
+$color-bg: #f8f8f8;
+$colorPink: #FF69B4;
+$color-white: #fff;
+$color-black: #000;
+$color-border-light: #e5e5e5;
+
+/* Font Variables */
+
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-bg;
+    
+}

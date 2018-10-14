@@ -1,0 +1,31 @@
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.search-wrapper {
+    margin-top: 3rem;
+    float: right;
+    width: 100%;
+}
+
+input.search-input {
+    height: 4rem;
+    width: 85%;
+    font-size: 1.6rem;
+}
+
+input.search-input::placeholder {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    
+}
+
+input.subscribe {
+    height: 4rem;
+    width: 80%;
+}
+form.subscribe {
+    width: 100%;
+}

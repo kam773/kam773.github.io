@@ -1,0 +1,107 @@
+/* big slider overlay */
+.upper-text {
+    text-transform: uppercase;
+    width: 96.66666666666666%;
+    color: $color-white;
+    right: auto;
+    font-size: 2rem;
+}
+
+.main-text {
+    right: auto;
+    width: 96.66666666666666%;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.lower-text {
+    right: auto;
+    width: 96.66666666666666%;
+    color: $color-white;
+    font-size: 1.6rem;
+}
+
+/* grid text overlayed */
+.grid-text h2 {
+    color: $color-white;
+    text-transform: uppercase; 
+    font-weight: 700; 
+    font-size: 2.4rem;  
+    text-align: center; 
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.grid-text p {
+    color: $color-white;
+    text-align: center;
+    margin: 2rem 4rem;
+    font-size: 1.6rem;
+}
+
+/* features section */
+.header-secondary {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+a.section-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #999;
+    font-weight: 700;
+    transition: all .3s; 
+    font-size: 1.6rem;
+    transition: all .3s;
+
+    &:hover {
+        color:hotpink;
+    }
+}
+
+/* testimonials section */
+p.quote {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #5c5c5c;
+    font-style: normal;
+}
+
+/* footer section */
+.header-footer {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+
+.subscribe {
+    color: #bbb;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* left slider overlay */
+.product-title {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: all .3s;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        color: hotpink;
+    }
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    
+}

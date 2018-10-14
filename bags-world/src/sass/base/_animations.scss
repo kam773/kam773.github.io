@@ -1,0 +1,43 @@
+.hover-effect {
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    transition: all .5s ease;
+     
+}
+
+.slide-wrapper:hover .slide-img-left {
+    opacity: 0.5;
+    transform: scale(1.05);
+    
+}
+
+.slide-wrapper:hover .hover-list {
+    opacity: 1;
+         
+}
+
+.flex-item:hover .hover-list {
+    opacity: 1;
+         
+}
+
+.flex-item:hover .item-img {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.flex-item-sellers:hover .hover-list {
+    opacity: 1;
+         
+}
+
+.flex-item-sellers:hover .item-img {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.flex-item-sellers:hover .hover-list {
+    opacity: 1;
+         
+}

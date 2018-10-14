@@ -1,0 +1,46 @@
+.line-1 {
+    height: 2px;
+    width: 220px;
+    background-color: $color-white;
+}
+
+.line-2 {
+    height: 2px;
+    width: 100px;
+    background-color: $color-white;
+}
+
+.line-3 {
+    height: 2px;
+    width: 270px;
+    background-color: $color-white; 
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100px;
+    background-color: $color-white;  
+    margin: 0 auto;  
+}
+
+i .fa {
+    font-size: 2rem;
+}
+
+.fa-plane,
+.fa-headphones,
+.fa-thumbs-up,
+.fa-tag {
+    color: $color-black;
+    padding-right: 1rem;
+}
+
+.fa-star-o {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.fa-angle-right,
+.fa-envelope {
+    color: $color-white;
+}

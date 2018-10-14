@@ -1,0 +1,161 @@
+/* Top left slider */
+
+.slider-left {
+    width: 100%;
+    height: 48rem;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+
+}
+
+.slide-wrapper {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    transition: all .5s;
+}
+
+.slide-img-left {
+    width: 100%;
+    height: 250px;
+    padding-top: 25px;
+    transition: all .5s ease;
+}
+
+.stars-list {
+    list-style: none;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.star {
+    display: inline-block;
+}
+
+.discount {
+    background-color: rgb(206, 9, 9);
+    color: $color-white;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Big slider */
+.slider-big {
+    width: 100%;
+    height: 48rem;
+    border: 1px solid #e5e5e5;
+    
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    height: 48rem;
+    filter: brightness(90%);
+}
+
+.carousel-text {
+    @include textOverlay;
+    width: 50%;
+}
+
+.slider-sellers {
+    height: 42rem;
+    background-color:  #f8f8f8;
+    
+}
+
+.slide-sellers {
+    background-color: $color-white;
+    margin: 0 .5rem;
+    height: 42rem;
+    border: 1px solid #e5e5e5;
+
+    &:last-of-type {
+        margin: 0;
+    }
+}
+
+.flex-item-sellers {
+    position: relative;
+    height: 100%;
+   
+}
+
+.flex-item-sellers img {
+    padding: 1rem;
+    
+}
+/* slider testimonials */
+.slider-testimonials {
+    height: 30rem;
+    background-color: $color-white;
+    border: 1px solid #e5e5e5;
+}
+
+.testimonial-img img {
+    border-radius: 50%;
+    border: 1px solid hotpink;
+    width: 15rem;
+    height: 15rem;
+}
+
+.testimonial-img  {
+    padding: 2rem;
+    float: left;
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+
+.testimonial {
+    float: right;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 7rem;
+}
+
+strong.name {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    color: #333;
+    display: inline-block;
+    position: relative;
+}
+
+/* slider 3/4 right */
+.slider-right {
+    background-color: $color-white;
+    border: 1px solid #e5e5e5;
+    height: 45rem;
+    margin-top: 4rem;
+}
+
+/* slider bottom */
+.slider-bottom {
+    background-color: $color-white;
+    height: 12rem;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    margin: 3rem 0;
+    overflow: hidden;
+}
+
+.slide-bottom img { 
+    width: auto; 
+    height: 8rem;
+    padding: 1rem;
+}
+
+.slider-bottom-wrapper {
+    padding: 1.5rem;
+}
+
+.slide-bottom {
+    vertical-align: middle;
+}

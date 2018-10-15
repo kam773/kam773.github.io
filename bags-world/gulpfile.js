@@ -10,6 +10,7 @@ var htmlReplace = require('gulp-html-replace');
 var htmlMin = require('gulp-htmlmin');
 var del = require('del');
 var sequence = require('run-sequence');
+var concat = require('gulp-concat');
 
 // Server
 gulp.task('serve', ['sass'], function() {
@@ -36,6 +37,7 @@ gulp.task('sass', function() {
 gulp.task('css', function() {
     return gulp.src('src/css/**/*.css')
         .pipe(cleanCSS())
+        .pipe(concat('main.css'))
         .pipe(gulp.dest('dist/css'));
 
 });
@@ -43,6 +45,7 @@ gulp.task('css', function() {
 // Build JS
 gulp.task('js', function() {
     return gulp.src('src/js/**/*.js')
+        .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 
@@ -71,16 +74,21 @@ gulp.task('html', function() {
         .pipe(gulp.dest('dist/'));
 });
 
+// Build fonts
+gulp.task('fonts', function() {
+    return gulp.src('src/fonts/*')
+    .pipe(gulp.dest('dist/fonts'));
+});
 
 // Clean src
 gulp.task('clean', function() {
-    return del(['dist'])
+    return del(['dist']);
 });
 
 
 // Build Project
 gulp.task('build', function() {
-    sequence('clean', ['html', 'js', 'css', 'img']);
+    sequence('clean', ['html', 'js', 'css', 'img', 'fonts']);
 });
 
 

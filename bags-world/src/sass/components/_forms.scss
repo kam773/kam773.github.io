@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-input.search-input {
+input[type="text"] {
     height: 4rem;
     width: 85%;
     font-size: 1.6rem;
@@ -30,14 +30,14 @@ input.search-input {
     }
 }
 
-.search-input::placeholder {
-    padding-left: 1.5rem;
+input[type="text"]::placeholder {
+    padding-left: 2rem;
     font-size: 1.6rem;
 }
 
-input.subscribe {
+input[type="text"] {
     height: 4rem;
-    width: 80%;
+    width: 85%;
 }
 
 .subscribe {
@@ -47,11 +47,9 @@ input.subscribe {
 }
 
 input[type="email"] {
+    height: 4rem;
+    width: 85%;
+    padding-left: 2rem;
+    font-size: 1.6rem;
 
-    @include respond(tab-port) {
-        margin-right: 0;
-    }
-    @include respond(phone) {
-        margin-right: 0;
-    }
 }

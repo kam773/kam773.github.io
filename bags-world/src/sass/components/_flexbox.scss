@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 3rem;
-
+    margin: 3rem 0;
     @include respond(tab-port) {
         flex-direction: column;
         align-items: center;
@@ -24,7 +23,7 @@
 .flex-item {
     border: 1px solid #e5e5e5;
     background-color: $color-white;
-    height: 40rem;
+    height: 45rem;
     width: 24%;  
     position: relative;
 

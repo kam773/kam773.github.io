@@ -37,14 +37,11 @@
     }
 
     @include respond(tab-port) {
-        width: 4rem;
-        height: 4rem;
-        margin: .5rem 1rem;
+      
     }
     @include respond(phone) {
-        width: 3rem;
-        height: 3rem;
-        margin: .5rem 1rem;
+       
+       
     }
 }
 

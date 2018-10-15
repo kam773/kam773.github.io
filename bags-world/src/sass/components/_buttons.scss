@@ -11,6 +11,26 @@ a[type="button"] {
    
 }
 
+.item-left > img {
+    height: 9rem;
+    width: 9rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 25rem;
+    height: auto;
+
+}
+
+.item-info {
+    padding-top: 4rem;
+    text-align: center;
+}
+
 .cart-description {
     color: #000;
     font-weight: 700;

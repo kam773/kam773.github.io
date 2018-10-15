@@ -240,7 +240,7 @@ p.text-dark {
   width: 25rem; }
 
 .helper {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center; }
@@ -575,7 +575,7 @@ p.text-dark {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 3rem; }
+  margin: 3rem 0; }
   @media only screen and (max-width: 56.25em) {
     .flexbox {
       -webkit-box-orient: vertical;
@@ -608,7 +608,7 @@ p.text-dark {
 .flex-item {
   border: 1px solid #e5e5e5;
   background-color: #fff;
-  height: 40rem;
+  height: 45rem;
   width: 24%;
   position: relative; }
   @media only screen and (max-width: 56.25em) {
@@ -738,6 +738,31 @@ a[type="button"] {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.item-left > img {
+  height: 9rem;
+  width: 9rem; }
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 25rem;
+  height: auto; }
+
+.item-info {
+  padding-top: 4rem;
+  text-align: center; }
+
 .cart-description {
   color: #000;
   font-weight: 700;
@@ -861,16 +886,6 @@ a.go-to-blog {
     width: 4.4rem;
     height: 4.4rem;
     margin: 0 .5rem; }
-  @media only screen and (max-width: 56.25em) {
-    .social-item {
-      width: 4rem;
-      height: 4rem;
-      margin: .5rem 1rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .social-item {
-      width: 3rem;
-      height: 3rem;
-      margin: .5rem 1rem; } }
 
 .contact-list {
   list-style: none;
@@ -959,35 +974,35 @@ a.go-to-blog {
   margin-top: 3rem;
   width: 100%; }
 
-input.search-input {
+input[type="text"] {
   height: 4rem;
   width: 85%;
   font-size: 1.6rem; }
   @media only screen and (max-width: 75em) {
-    input.search-input {
+    input[type="text"] {
       width: 80%; } }
   @media only screen and (max-width: 56.25em) {
-    input.search-input {
+    input[type="text"] {
       width: 80%; } }
   @media only screen and (max-width: 37.5em) {
-    input.search-input {
+    input[type="text"] {
       width: 91%; } }
 
-.search-input::-webkit-input-placeholder {
-  padding-left: 1.5rem;
+input[type="text"]::-webkit-input-placeholder {
+  padding-left: 2rem;
   font-size: 1.6rem; }
 
-.search-input::-ms-input-placeholder {
-  padding-left: 1.5rem;
+input[type="text"]::-ms-input-placeholder {
+  padding-left: 2rem;
   font-size: 1.6rem; }
 
-.search-input::placeholder {
-  padding-left: 1.5rem;
+input[type="text"]::placeholder {
+  padding-left: 2rem;
   font-size: 1.6rem; }
 
-input.subscribe {
+input[type="text"] {
   height: 4rem;
-  width: 80%; }
+  width: 85%; }
 
 .subscribe {
   display: -webkit-box;
@@ -1001,13 +1016,11 @@ input.subscribe {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-@media only screen and (max-width: 56.25em) {
-  input[type="email"] {
-    margin-right: 0; } }
-
-@media only screen and (max-width: 37.5em) {
-  input[type="email"] {
-    margin-right: 0; } }
+input[type="email"] {
+  height: 4rem;
+  width: 85%;
+  padding-left: 2rem;
+  font-size: 1.6rem; }
 
 .image-wrapper {
   height: 45rem;

@@ -63,6 +63,27 @@ a.section-link {
     }
 }
 
+/* testimonials section */
+.carousel-inner .carousel-item .img-box {
+    width: 135px;
+    height: 135px;
+}
+
+p.text-dark {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2rem;
+}
+.carousel-inner .carousel-item {
+    padding-top: 4rem;
+}
+.carousel-testimonial {
+    background-color: $color-white;
+    border: 1px solid #e5e5e5;
+    height: 30rem;
+}
+
+
 /* footer section */
 .header-footer {
     text-align: center;

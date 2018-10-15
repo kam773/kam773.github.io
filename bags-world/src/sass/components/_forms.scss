@@ -6,7 +6,6 @@
 
 .search-wrapper {
     margin-top: 3rem;
-    float: right;
     width: 100%;
 }
 
@@ -31,10 +30,9 @@ input.search-input {
     }
 }
 
-input.search-input::placeholder {
-    padding-left: 1rem;
+.search-input::placeholder {
+    padding-left: 1.5rem;
     font-size: 1.6rem;
-    
 }
 
 input.subscribe {

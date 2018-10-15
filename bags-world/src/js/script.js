@@ -10,6 +10,13 @@ $(document).scroll(function(e){
 
 // sliders
 $(document).ready(function() {
+
+    $('.testimonial-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
     
     $('.slider-left').slick({ 
         slidesToShow: 1,
@@ -117,13 +124,6 @@ $(document).ready(function() {
         ]   
     });
 
-    $('.testimonial-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-
     $('.slider-bottom').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -155,7 +155,6 @@ $(document).ready(function() {
             }
         ]   
     });
-
 });
 
 // scrollTop arrow

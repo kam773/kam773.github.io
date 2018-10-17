@@ -158,7 +158,7 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 147%;
+      height: 150%;
       z-index: -1;
       background: -o-radial-gradient(circle, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.99));
       background: radial-gradient(circle, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.99)); }
@@ -185,7 +185,9 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 400; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -211,7 +213,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: 100%; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -233,7 +235,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;

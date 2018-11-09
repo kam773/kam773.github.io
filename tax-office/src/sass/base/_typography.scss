@@ -1,0 +1,56 @@
+.section-header {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+.text-left {
+	font-size: 6rem;
+	margin: 0;
+	font-weight: 900;
+	font-family: 'Reem Kufi', sans-serif;
+	color: #8094ac;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	mix-blend-mode: darken;
+	text-shadow: -1px 0 0 #040106, 0 -1px 0 #040106, -2px -1px 0 #040106, -1px -2px 0 #040106, -3px -2px 0 #040106, -2px -3px 0 #040106, -4px -3px 0 #040106, -3px -4px 0 #040106, -5px -4px 0 #040106, -4px -5px 0 #040106, -6px -5px 0 #040106, -5px -6px 0 #040106, -7px -6px 0 #040106;
+	&:before {
+		content: attr(data-heading);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 3;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+		text-shadow: -1px -1px 0 #040106, 1px -1px 0 #040106, -1px 1px 0 #040106, 1px 1px 0 #040106;
+	}
+	&:after {
+		content: attr(data-heading);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 3;
+		overflow: hidden;
+		transform: translate(.3vw, -.3vw);
+		text-align: center;
+		width: 100%;
+		color: #00356b;
+		text-shadow: none;
+		mix-blend-mode: darken;
+	}
+}

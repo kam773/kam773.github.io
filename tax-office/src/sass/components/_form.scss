@@ -1,0 +1,38 @@
+.contact-form {
+    float: right;
+    margin-right: 10rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+    margin: 0 auto;
+    width: 40rem;
+    background: #fff;
+    border: 1px solid lightblue;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+input[type="submit"] {
+    background: lightblue;
+    border: 1px solid #fff;
+    color: #333;
+    width: 40rem;
+    padding: 1.5rem;
+    transition: 0.3s background linear;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background: #000;
+    border-color: #000;
+    transition: 0.3s background linear;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea {
+    width: 40rem;
+    height: 15rem;
+    margin-bottom: 5rem;
+    padding: 12px 15px;
+}

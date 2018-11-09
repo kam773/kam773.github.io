@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    height: 60rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+     url(../../img/bg-img.jpeg); 
+    background-size: cover;
+    background-position: top;
+
+}
+
+.text-wrapper {
+    @include absCenter;
+}
+
+.header-primary {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-secondary {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}

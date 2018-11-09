@@ -8,6 +8,13 @@ a.btn {
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10rem;
+    font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;  
+    }
 }
 
 .cta {

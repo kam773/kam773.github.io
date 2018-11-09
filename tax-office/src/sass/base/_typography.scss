@@ -3,6 +3,17 @@
     font-size: 3rem;
 }
 
+.section-header:after {
+	display: block;
+	height: 3px;
+	background-color: #333;
+	content: " ";
+	width: 8rem;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+
 h5 {
     font-size: 2rem;
     line-height: 1.5;
@@ -53,4 +64,22 @@ h2 {
 		text-shadow: none;
 		mix-blend-mode: darken;
 	}
+}
+
+.text-about {
+	line-height: 1.5;
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-about-secondary {
+	line-height: 1.5;
+	font-size: 2rem;
+	margin: 0 15rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.box > h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
 }

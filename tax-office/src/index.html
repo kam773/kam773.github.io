@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Shadows+Into+Light" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
@@ -21,33 +22,36 @@
 </head>
 <body>
     <header>
+        <div class="bg-img">
+                <img src="./img/bg-img.jpeg" alt="Background image">
+        </div>    
         <nav class="navigation">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">o firmie</a></li>
-                    <li class="nav-item"><a href="#">nasza oferta</a></li>
-                    <li class="nav-item"><a href="#">cennik</a></li>
-                    <li class="nav-item"><a href="#">mapa dojazdu</a></li>
-                    <li class="nav-item"><a href="#">kontakt</a></li>
+                    <li class="nav-item"><a href="#about">o firmie</a></li>
+                    <li class="nav-item"><a href="#service">nasza oferta</a></li>
+                    <li class="nav-item"><a href="#tariff">cennik</a></li>
+                    <li class="nav-item"><a href="#contact">mapa dojazdu</a></li>
+                    <li class="nav-item"><a href="#contact">kontakt</a></li>
                 </ul>
         </nav>
         <div class="text-wrapper">
-                <h1 class="header-primary">Biuro Rachunkowe</h1>
+                <h1 class="header-primary">Biuro rachunkowe</h1>
                 <h4 class="header-secondary">Elżbieta Kałużna</h4>                          
         </div>
         <div class="cta">
                 <a href="#contact" class="btn"><span>Skontaktuj się z nami</span></a>
         </div>
     </header>
-    <section class="about">
-        <div class="u-center-text margin-top-small margin-bottom-medium">
+    <section class="about" id="about">
+        <div class="u-center-text margin-top-medium margin-bottom-medium">
                <h2 class="section-header">O Firmie</h2>
         </div>
-            <h5 class="u-center-text">Prowadzisz firmę?</h5>
-            <h5 class="u-center-text">Nie chcesz lub nie lubisz tracić czasu na sprawy administracyjno-księgowe swojej firmy?</h5>
-            <h5 class="u-center-text">Ta oferta skierowana jest właśnie do Ciebie!</h5>
+            <h5 class="u-center-text text-about">Prowadzisz firmę?</h5>
+            <h5 class="u-center-text text-about">Nie chcesz lub nie lubisz tracić czasu na sprawy administracyjno-księgowe swojej firmy?</h5>
+            <h5 class="u-center-text margin-top-medium margin-bottom-medium text-about">Ta oferta skierowana jest właśnie do Ciebie!</h5>
 
-            <p class="u-center-text margin-top-small">Proponujemy Państwu kompleksową obsługę finansowo-księgową firmy, min. usługi księgowe, podatkowe,kadrowe i płacowe). W każdej chwili służymy pomocą, oraz zapewniamy bezpieczeństwo i poufność informacji.</p>
-            <p class="u-center-text">Posiadamy ubezpieczenie od odpowiedzialności cywilnej za ewentualne błędy zawodowe, zgodnie z wymogami ustawy o doradztwie podatkowym.</p>
+            <p class="u-center-text text-about-secondary">Proponujemy Państwu kompleksową obsługę finansowo-księgową firmy, min. usługi księgowe, podatkowe,kadrowe i płacowe. W każdej chwili służymy pomocą, oraz zapewniamy bezpieczeństwo i poufność informacji.</p>
+            <p class="u-center-text text-about-secondary">Posiadamy ubezpieczenie od odpowiedzialności cywilnej za ewentualne błędy zawodowe, zgodnie z wymogami ustawy o doradztwie podatkowym.</p>
             <div class="wrapper u-center-text">
                 <img class="paragraph" src="./img/paragraph-360093_640.png" alt="Paragraf">
                 <div class="description">
@@ -57,7 +61,7 @@
                 </div>
             </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="u-center-text margin-top-small margin-bottom-medium">
             <h2 class="section-header">Nasza oferta</h2>
         </div>
@@ -65,61 +69,64 @@
                 <div class="box box-1">
                         <img class="box-img" src="./img/calculator.png" alt="Kalkulator">
                         <h2 class="margin-top-small margin-bottom-small">Księgowość</h2>
-                        <ul class="section-list">
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                        prowadzenie ksiąg handlowych</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                        prowadzenie książki przychodów i rozchodów</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                        ewidencja przychodów dla celów zryczałtowanego podatku dochodowego od osób fizycznych</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                        ewidencja rejestrów dla celów rozliczenia podatku od towarów i usług VAT</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                        sporządzanie ewidencji środków trwałych i wyposażenia</li>
-                        </ul>
+                <ul class="section-list">
+                    <li>
+                        Prowadzenie ksiąg handlowych</li>
+                    <li>
+                        Prowadzenie książki przychodów i rozchodów</li>
+                    <li>
+                        Ewidencja przychodów dla celów zryczałtowanego podatku dochodowego od osób fizycznych</li>
+                    <li>
+                        Ewidencja rejestrów dla celów rozliczenia podatku od towarów i usług VAT</li>
+                    <li>
+                        Sporządzanie ewidencji środków trwałych i wyposażenia</li>
+                </ul>
                 </div>
                 <div class="box box-2">
                         <img class="box-img" src="./img/personnel.png" alt="Kalkulator">
                         <h2 class="margin-top-small margin-bottom-small">Kadry</h2>
                         <ul class="section-list">
-                            <li><i class="fa fa-check" aria-hidden="true"></i>sporządzanie listy płac</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>sporządzanie kartotek wynagrodzenia pracowniczego</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>rozliczanie podatku dochodowego od pracowników</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>sporządzanie sprawozdań dla GUS</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>odzyskiwanie podatku VAT za materiały budowlane (VZM)</li>
+                            <li>Sporządzanie listy płac</li>
+                            <li>Sporządzanie kartotek wynagrodzenia pracowniczego</li>
+                            <li>Rozliczanie podatku dochodowego od pracowników</li>
+                            <li>Sporządzanie sprawozdań dla GUS</li>
+                            <li>Odzyskiwanie podatku VAT za materiały budowlane (VZM)</li>
                         </ul>
                 </div>
                 <div class="box box-3">
                         <img class="box-img" src="./img/consulting.png" alt="Kalkulator">
                         <h2 class="margin-top-small margin-bottom-small">Doradztwo</h2>
                         <ul class="section-list">
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    porady w zakresie zmniejszania obciążeń podatkowych i ZUS-owskich</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    sporządzanie wniosków kredytowych</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    sporządzanie sprawozdań dla GUS</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    rozliczanie klientów indywidualnych z osiągniętych dochodów (PIT – 28,36,37)</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    konsultacje i doradztwo w sprawach prowadzenia firmy – czyli kompleksowa obsługa osób prawnych i fizycznych</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    opracowanie dokumentów oraz rejestracja firm we wszystkich formach własności,</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>
-                                    kontrola rozrachunków.</li>
+                            <li>
+                                    Porady w zakresie zmniejszania obciążeń podatkowych i ZUS-owskich</li>
+                            <li>
+                                    Sporządzanie wniosków kredytowych</li>
+                            <li>
+                                    Sporządzanie sprawozdań dla GUS</li>
+                            <li>
+                                    Rozliczanie klientów indywidualnych z osiągniętych dochodów (PIT – 28,36,37)</li>
+                            <li>
+                                    Konsultacje i doradztwo w sprawach prowadzenia firmy – czyli kompleksowa obsługa osób prawnych i fizycznych</li>
+                            <li>
+                                    Opracowanie dokumentów oraz rejestracja firm we wszystkich formach własności,</li>
+                            <li>
+                                    Kontrola rozrachunków.</li>
                         </ul>
                 </div>
         </div>
        
     </section>
-    <section class="tariff">
+    <section class="tariff" id="tariff">
+            <div class="u-center-text margin-top-medium margin-bottom-medium">
+                    <h2 class="section-header">Cennik</h2>
+            </div>
         <div class="img-left">
-                <h1 class="text-left">Cennik</h1>
+                <h3>W zależności od rodzaju prowadzonej działalności, formy opodatkowania, a także ilości zatrudnionych pracowników, cena usługi za miesiąc obsługi ustalana jest ryczałtowo, odrębnie dla każdego klienta.</h3>
+               
         </div>
         <div class="content-right">
-                <h3>W zależności od rodzaju prowadzonej działalności, formy opodatkowania, a także ilości zatrudnionych pracowników, cena usługi za miesiąc obsługi ustalana jest ryczałtowo, odrębnie dla każdego klienta.</h3>
-                <h3>Obsługa miesięczna obejmuje</h3>
-                <ul>
+                <h3 class="margin-bottom-medium">Obsługa miesięczna obejmuje:</h3>
+                <ul class="tariff-list">
                     <li>prowadzenie ewidencji księgowych w pełnym zakresie,</li>
                     <li>sporządzanie list płac z rozliczeniem składek ZUS i podatków</li>
                     <li>sporządzanie deklaracji podatkowych i ZUS</li>
@@ -127,7 +134,7 @@
                 </ul>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
             <div class="u-center-text margin-top-small margin-bottom-medium">
                     <h2 class="section-header">Kontakt</h2>
                 </div>
@@ -138,20 +145,12 @@
             <div class="contact-info">
                 <h2>Biuro Rachunkowe</h2>
                 <h3>Elżbieta Kałużna</h3>
-                <p>ul. Młyska 4 <br> 89-600 Chojnice</p>
+                <p>ul. Młyńska 4 <br> 89-600 Chojnice</p>
                 <ul class="contact-list">
-                    <li><i class="fa fa-phone" aria-hidden="true"></i>
-                            52 33 69 415
-                    </li>
-                    <li><i class="fa fa-fax" aria-hidden="true"></i>
-                            52 33 69 415
-                    </li>
-                    <li><i class="fa fa-mobile" aria-hidden="true"></i>
-                            601 221 116
-                    </li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
-                            biuro@biurorachunkowe-ela.pl
-                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>52 33 69 415</li>
+                    <li><i class="fa fa-fax" aria-hidden="true"></i>52 33 69 415</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i>601 221 116</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>biuro@biurorachunkowe-ela.pl</li>
                 </ul>
             </div>
         </div>
@@ -168,10 +167,26 @@
     </section>
     <footer class="footer">
             <div class="footer-inner">
-                Copyright &#9400; 2018.
+                Copyright &#9400; 2018. Biuro rachunkowe Elżbieta Kałużna.
             </div>
     </footer>
   
-    <script src="./js/script.js"></script>  
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow12.png" />',
+        controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);
+        t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,
+        s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,
+        this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},
+        init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),
+        o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),
+        document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+        
+        <script>
+                $(function() { $('a[href*="#"]:not([href="#"])').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) { var target = $(this.hash); target = target.length ? target : $('[name='
+                + this.hash.slice(1) +']'); if (target.length) { $('html, body').animate({ scrollTop: target.offset().top }, 500);
+                return false; } } }); }); $(window).on("scroll", function() { if($(window).scrollTop()) { $('nav').addClass('sticky');
+                } else { $('nav').removeClass('sticky'); } });       
+        </script>
 </body>
 </html>

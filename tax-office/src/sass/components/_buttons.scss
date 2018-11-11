@@ -15,6 +15,10 @@ a.btn {
         background-color: #000;
         color: #fff;  
     }
+
+    @include respond(phone) {      
+        font-size: 1rem;
+    }
 }
 
 .cta {

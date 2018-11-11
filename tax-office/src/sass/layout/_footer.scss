@@ -4,6 +4,14 @@
     background-color: #000;
     margin-top: 3rem;
     clear: both;
+
+    @include respond(tab-port) {      
+       clear: none;
+    }
+
+    @include respond(phone) {      
+        clear: none;
+    }
 }
 
 .footer-inner {

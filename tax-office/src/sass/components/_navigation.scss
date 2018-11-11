@@ -20,6 +20,10 @@ nav {
 .nav-list {
     list-style-type: none;
     text-align: center;
+
+    @include respond(phone) {      
+       display: none;
+    }
 }
 
 .nav-item  {
@@ -55,4 +59,72 @@ nav {
         background-color: #fff;
         color: #000;
     }
+}
+
+/* Mobile navigantion*/
+.toggle {
+    width: 100%;
+    padding: 2rem 2rem;
+    text-align: right;
+    box-sizing: border-box;
+    display: none;
+}
+  
+.toggle a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 4rem;
+   
+}
+   
+@media (max-width: 600px) {
+
+    .toggle {
+        display: block;
+    }
+  
+    .nav-list li {
+        display: block;
+        text-align: center;
+        float: none;
+        background-color: #000;
+        padding: 2rem;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .navigation {
+        background-color: #000;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .navigation.black ul li a {
+        padding: 1rem;
+    
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    .nav-item a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
+        transition: .5s;
+    
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    .navigation.black {
+        background-color: rgba(0, 0, 0, 1);
+        height: 10rem;
+    }
+  
 }

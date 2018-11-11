@@ -1,6 +1,14 @@
 .contact-form {
     float: right;
     margin-right: 10rem;
+
+    @include respond(tab-port) {      
+       float: none;
+    }
+
+    @include respond(phone) {      
+        float: none;
+    }
 }
 
 input[type="text"],

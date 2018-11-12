@@ -1,1 +1,93 @@
-$(document).ready(function(){$(document).delegate(".open","click",function(t){$(this).addClass("oppenned"),t.stopPropagation()}),$(document).delegate("body","click",function(t){$(".open").removeClass("oppenned")}),$(document).delegate(".cls","click",function(t){$(".open").removeClass("oppenned"),t.stopPropagation()})}),function(i){"use strict";i(".input100").each(function(){i(this).on("blur",function(){""!=i(this).val().trim()?i(this).addClass("has-val"):i(this).removeClass("has-val")})});var o=i(".validate-input .input100");function c(t){if("email"==i(t).attr("type")||"email"==i(t).attr("name")){if(null==i(t).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/))return!1}else if(""==i(t).val().trim())return!1}i(".validate-form").on("submit",function(){for(var t,n,a=!0,e=0;e<o.length;e++)0==c(o[e])&&(t=o[e],void 0,n=i(t).parent(),i(n).addClass("alert-validate"),a=!1);return a}),i(".validate-form .input100").each(function(){i(this).focus(function(){var t;t=i(this).parent(),i(t).removeClass("alert-validate")})}),i(".contact100-btn-hide").on("click",function(){i(".wrap-contact100").fadeOut(400)}),i(".contact100-btn-show").on("click",function(){i(".wrap-contact100").fadeIn(400)})}(jQuery);
+$(document).ready(function() {
+    $(document).delegate('.open', 'click', function(event){
+        $(this).addClass('oppenned');
+        event.stopPropagation();
+    })
+    $(document).delegate('body', 'click', function(event) {
+        $('.open').removeClass('oppenned');
+    })
+    $(document).delegate('.cls', 'click', function(event){
+        $('.open').removeClass('oppenned');
+        event.stopPropagation();
+    });
+});
+
+
+(function ($) {
+    "use strict";
+
+    /*==================================================================
+    [ Focus Contact2 ]*/
+    $('.input100').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
+    })
+
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+
+    /*==================================================================
+    [ Show / hide Form ]*/
+    
+    $('.contact100-btn-hide').on('click', function(){
+        $('.wrap-contact100').fadeOut(400);
+    })
+
+    $('.contact100-btn-show').on('click', function(){
+        $('.wrap-contact100').fadeIn(400);
+    })
+
+})(jQuery);

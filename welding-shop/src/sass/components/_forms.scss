@@ -1,0 +1,33 @@
+input[type=text],
+input[type=email] {
+    height: 4rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder {
+    font-size: 1.6rem;
+    padding: .5rem;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+textarea[name=message] {
+    width: 100%;
+    height: 12rem;
+    font-size: 1.6rem;
+}
+
+textarea::placeholder {
+    font-size: 1.6rem;
+    padding: .5rem;
+
+}
+
+button[type=submit] {
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+}

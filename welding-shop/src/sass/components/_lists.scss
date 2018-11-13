@@ -1,0 +1,26 @@
+.service__list {
+    margin-left: 9rem;
+}
+
+.list-item {
+    font-size: 1.4rem;
+}
+
+.address-list {
+    list-style-type: none;
+}
+
+.address-list li {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-top: 5rem;
+    & li {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}

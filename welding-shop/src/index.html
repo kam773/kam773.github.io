@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:300,400,700" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -20,50 +21,70 @@
            <div class="logo-img">
                 <img src="./img/logo.jpg" alt="Logo">
            </div>
-           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                          <li class="nav-item px-5">
-                            <a class="nav-link link" href="#">O Firmie<span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item px-5">
-                            <a class="nav-link link" href="#">Oferta</a>
-                          </li>
-                          <li class="nav-item px-5">
-                            <a class="nav-link link" href="#">Lokalizacja</a>
-                          </li>
-                          <li class="nav-item px-5">
-                            <a class="nav-link link" href="#">Kontakt</a>
-                          </li>
-                        </ul>
-                      </div>
+           <nav class="navigation">
+             <ul class="nav-list">
+               <li class="nav-item"><a class="link" href="">O Firmie</a></li>
+               <li class="nav-item"><a class="link" href="">Oferta</a></li>
+               <li class="nav-item"><a class="link" href="">Lokalizacja</a></li>
+               <li class="nav-item"><a class="link" href="">Kontakt</a></li>
+             </ul>
+              
            </nav>
-           <div class="slider">
-             <div class="slide">
-                  <div class="slide-wrapper">
-                    <div class="slider-img">
-                      <img src="img/slide-2.jpg" alt="Slide 1">
+
+           <div class="row">
+             <div class="col-lg-8">
+                <div class="slider">
+                    <div class="slide">
+                         <div class="slide-wrapper">
+                           <div class="slider-img">
+                             <img src="img/slide-2.jpg" alt="Slide 1">
+                           </div>
+                           <div class="text-wrapper">
+                              <h1 class="heading-primary white">Sprzęt spawalniczy</h1>
+                             <h1 class="heading-primary white"><span></span> najwyższej jakości</h1>
+                           </div>
+                         </div>
+                    </div>
+                    <div class="slide">
+                       <div class="slide-wrapper">
+                           <div class="slider-img">
+                             <img src="img/slide-1.png" alt="Slide 2">
+                           </div>
+                           <div class="text-wrapper">
+                              <h1 class="heading-primary white">Materiały</h1>
+                              <h1 class="heading-primary white"><span></span> spawalnicze</h1>
+                           </div>
+                         </div>
+                    </div>
+                    <div class="slide">
+                       <div class="slide-wrapper">
+                           <div class="slider-img">
+                             <img src="img/slide-3.png" alt="Slide 2">
+                           </div>
+                           <div class="text-wrapper">
+                             <h1 class="heading-primary white">Urządzenia</h1>
+                              <h1 class="heading-primary white"><span></span> spawalnicze</h1>
+                           </div>
+                         </div>
                     </div>
                   </div>
              </div>
-             <div class="slide">
-                <div class="slide-wrapper">
-                    <div class="slider-img">
-                      <img src="img/slide-1.png" alt="Slide 2">
-                    </div>
+             <div class="col-lg-4">
+                <div class="slider-fade">
+                  <div class="slide">
+                    <div class="slider-img__small">
+                        <img src="img/esab-white.jpg" alt="Logo">
+                    </div>                    
                   </div>
-             </div>
-             <div class="slide">
-                <div class="slide-wrapper">
-                    <div class="slider-img">
-                      <img src="img/slide-3.png" alt="Slide 2">
-                    </div>
+                  <div class="slide">
+                      <div class="slider-img__small">
+                          <img src="img/lincoln-logo.jpg" alt="Logo">
+                      </div>                     
                   </div>
+                </div>
              </div>
            </div>
+           
        </header>
        <section class="about">
          <div class="section-header">
@@ -81,65 +102,55 @@
           </div>
 
           <div class="offer">
-              <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+              <ul class="nav nav-tabs nav-justified" role="tablist">
                   <li class="nav-item tab-1">
-                    <a class="nav-link active" id="urzadzenia-tab" data-toggle="tab" href="#urzadzenia" role="tab" aria-controls="home" aria-selected="true">Urządzenia spawalnicze</a>
+                    <a class="nav-link active" id="urzadzenia-tab" data-toggle="tab" href="#urzadzenia" role="tab" aria-controls="urzadzenia" aria-selected="true">Urządzenia spawalnicze</a>
                   </li>
                   <li class="nav-item tab-2">
-                    <a class="nav-link" id="przecinarki-tab" data-toggle="tab" href="#przecinarki" role="tab" aria-controls="profile" aria-selected="false">Przecinarki plazmowe</a>
+                    <a class="nav-link" id="przecinarki-tab" data-toggle="tab" href="#przecinarki" role="tab" aria-controls="przecinarki" aria-selected="false">Przecinarki plazmowe</a>
                   </li>
-                  <li class="nav-item tab-3">
-                    <a class="nav-link" id="prostowniki-tab" data-toggle="tab" href="#prostowniki" role="tab" aria-controls="contact" aria-selected="false">Prostowniki</a>
-                  </li>
-                  <li class="nav-item tab-3">
-                      <a class="nav-link" id="czesci-tab" data-toggle="tab" href="#czesci" role="tab" aria-controls="contact" aria-selected="false">Części zamienne</a>
+                  <li class="nav-item tab-3 ">
+                    <a class="nav-link" id="prostowniki-tab" data-toggle="tab" href="#prostowniki" role="tab" aria-controls="prostowniki" aria-selected="false">Prostowniki</a>
                   </li>
                   <li class="nav-item tab-4">
-                      <a class="nav-link" id="materialy-tab" data-toggle="tab" href="#materialy" role="tab" aria-controls="contact" aria-selected="false">Materiały spawalnicze</a>
-                  </li>                
+                      <a class="nav-link" id="materialy-tab" data-toggle="tab" href="#materialy" role="tab" aria-controls="materialy" aria-selected="false">Materiały spawalnicze</a>
+                  </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content">
                   <div class="tab-pane fade show active" id="urzadzenia" role="tabpanel" aria-labelledby="urzadzenia-tab">
-                     <div class="row">
-                       <div class="col-lg-3">
-                          <div class="card">
-                              <img class="card-img-top" src="https://via.placeholder.com/300.png/09f/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                            </div>
-                       </div>
-                       <div class="col-lg-3">
-                          <div class="card">
-                              <img class="card-img-top" src="https://via.placeholder.com/300.png/09f/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                            </div>
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                      <li class="nav-item tab-5"><a class="nav-link active" id="zakladka1-tab" data-toggle="tab" href="#zakladka1" role="tab" aria-controls="zakladka1" aria-selected="true">Zakladka 1</a></li>
+                      <li class="nav-item tab-6"><a class="nav-link" id="zakladka2-tab" data-toggle="tab" href="#zakladka2" role="tab" aria-controls="zakladka2" aria-selected="false">Zakladka 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="zakladka1" role="tabpanel" aria-labelledby="zakladka1-tab">
+                        <h1>urządzenia 1</h1>
                       </div>
-                      <div class="col-lg-3">
-                          <div class="card">
-                              <img class="card-img-top" src="https://via.placeholder.com/300.png/09f/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                            </div>
+                      <div class="tab-pane fade" id="zakladka2" role="tabpanel" aria-labelledby="zakladka2-tab">
+                        <h1>urządzenia 2</h1>
                       </div>
-                      <div class="col-lg-3">
-                          <div class="card">
-                              <img class="card-img-top" src="https://via.placeholder.com/300.png/09f/fff" alt="Card image cap">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                            </div>
-                      </div>
-                     </div>
-                      
+                    </div>
                   </div>
-                  <div class="tab-pane fade" id="przecinarki" role="tabpanel" aria-labelledby="przecinarki-tab">...</div>
-                  <div class="tab-pane fade" id="prostowniki" role="tabpanel" aria-labelledby="prostowniki-tab">...</div>
-                  <div class="tab-pane fade" id="czesci" role="tabpanel" aria-labelledby="czesci-tab">...</div>
-                  <div class="tab-pane fade" id="materialy" role="tabpanel" aria-labelledby="materialy-tab">...</div>
+                  <div class="tab-pane fade" id="przecinarki" role="tabpanel" aria-labelledby="przecinarki-tab">
+                   <h1>przecinarki</h1> 
+                  </div>
+                  <div class="tab-pane fade" id="prostowniki" role="tabpanel" aria-labelledby="prostowniki-tab">
+                    <h1>prostowniki</h1>
+                  </div>
+                  <div class="tab-pane fade" id="materialy" role="tabpanel" aria-labelledby="materialy-tab">
+                      <ul class="nav nav-tabs nav-justified" role="tablist">
+                          <li class="nav-item tab-7"><a class="nav-link active" id="materialy1-tab" data-toggle="tab" href="#materialy1" role="tab" aria-controls="zakladka1" aria-selected="true">Zakladka 1</a></li>
+                          <li class="nav-item tab-8"><a class="nav-link" id="materialy2-tab" data-toggle="tab" href="#materialy2" role="tab" aria-controls="zakladka2" aria-selected="false">Zakladka 2</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="materialy1" role="tabpanel" aria-labelledby="materialy1-tab">
+                            <h1>materiały 1</h1>
+                          </div>
+                          <div class="tab-pane fade" id="materialy2" role="tabpanel" aria-labelledby="materialy2-tab">
+                            <h1>materiały 2</h1>
+                          </div>
+                        </div>
+                  </div>
                 </div>
           </div>
           <div class="section-header">
@@ -229,7 +240,11 @@
       
    </div>
    <footer class="footer">
-         
+         <div class="footer-inner">
+           <h2 class="footer-text">
+             Copyright &copy; 2018. Mega-Mag Piotr Dźwigała.
+           </h2>
+         </div>
    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

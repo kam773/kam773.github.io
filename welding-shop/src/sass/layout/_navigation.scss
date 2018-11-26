@@ -33,7 +33,7 @@ a.nav-link {
     margin-top: 3.5rem;
     display: inline-block;
     font-size: 2rem!important;
-    text-transform: uppercase;     
+    text-transform: uppercase;
 }
 
 .sticky {
@@ -82,6 +82,16 @@ a.nav-link {
 }
 
 .nav-tabs .tab-8 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-9 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-10 .nav-link.active {
     background-color: rgb(41, 41, 40);
     color: #fff;
 }

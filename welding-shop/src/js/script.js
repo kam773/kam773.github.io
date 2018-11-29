@@ -1,34 +1,23 @@
-window.onscroll = function() {
-    addSticky();
-};
-
-let navbar = document.querySelector('.navigation');
-let sticky = navbar.offsetTop;
-
-function addSticky() {
-    if(window.pageYOffset >= sticky) {
-        navbar.classList.add('sticky');
+$(window).on('scroll', function() {
+    if($(window).scrollTop()) {
+        $('nav').addClass('black');
     } else {
-        navbar.classList.remove('sticky');
+        $('nav').removeClass('black');
     }
-}
+})
 
 $(document).ready(function() {
-            
+
     $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
-       
-    });
+        autoplaySpeed: 2000,
+        speed: 1000,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
 
-    $('.slider-fade').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000
-        
     });
 
     $('.brand-slider').slick({
@@ -36,7 +25,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000
-        
+
     });
 
 });

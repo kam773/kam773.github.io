@@ -24,18 +24,18 @@
 }
 
 .brand img {
-    height: 6rem;
+    height: 8rem;
     width: 70%;
     padding: 1rem;
     background-position: center;
     background-size: cover;
 }
 
-.brand img.resize {
-    height: 7rem;
-    width: 80%;
-}
-
 .brand {
     padding: 1rem;
+}
+
+img.resize {
+    height: 45%;
+    width: 45%;
 }

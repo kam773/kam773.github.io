@@ -5,6 +5,14 @@
     grid-gap: 2rem;
 }
 
-.box {
-
+.box img {
+    width: 60%;
+    height: 60%;
 }
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

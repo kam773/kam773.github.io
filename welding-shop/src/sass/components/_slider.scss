@@ -39,3 +39,26 @@ img.resize {
     height: 45%;
     width: 45%;
 }
+
+.slider-prostowniki {
+    height: 100%;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.prostownik {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-wrapper img {
+    height: 35rem;
+    width: 35rem;
+}

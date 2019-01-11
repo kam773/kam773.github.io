@@ -59,6 +59,41 @@ body {
 .white {
   color: #fff; }
 
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px; }
+
 .slider {
   height: 50rem;
   width: 100%;
@@ -93,6 +128,34 @@ body {
 img.resize {
   height: 45%;
   width: 45%; }
+
+.slider-prostowniki {
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem; }
+
+.prostownik {
+  height: 100%;
+  width: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.img-wrapper img {
+  height: 35rem;
+  width: 35rem; }
 
 .content {
   margin: 0 auto; }
@@ -336,8 +399,8 @@ a.link {
   grid-gap: 2rem; }
 
 .box img {
-  width: 60%;
-  height: 60%; }
+  width: 70%;
+  height: 70%; }
 
 .box {
   display: -webkit-box;
@@ -351,21 +414,8 @@ a.link {
           align-items: center; }
 
 .box-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  height: 50rem;
+  width: 100%; }
 
 .article-name {
   font-size: 1.6rem;

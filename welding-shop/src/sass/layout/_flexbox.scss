@@ -1,10 +1,8 @@
 .box-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    height: 50rem;
+    width: 100%;
 }
+
 
 .article-name {
     font-size: 1.6rem;
@@ -20,8 +18,4 @@
 .box.small img {
     width: 80%;
     height: 80%;
-}
-
-.offer-wrapper {
-
 }

@@ -1,11 +1,11 @@
 .grid {
     display: grid;
-    grid-template-columns: 1fr 30% 30% 30% 1fr;
+    grid-template-columns: 1fr 45% 45% 1fr;
     grid-template-rows: 50rem;
 
     @include respond(tab-port) {
         grid-template-columns: 1fr 90% 1fr;
-        grid-template-rows: repeat(3, 50rem);
+        grid-template-rows: repeat(2, 50rem);
     }
 
 }
@@ -13,7 +13,7 @@
 .box-1 {
     grid-column: 2 / 3;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
         grid-column: 2 / 3;
     }
 }
@@ -21,15 +21,7 @@
 .box-2 {
     grid-column: 3 / 4;
 
-    @include respond(tab-port) {       
-        grid-column: 2 / 3;
-    }
-}
-
-.box-3 {
-    grid-column: 4 / 5;
-
-    @include respond(tab-port) {        
+    @include respond(tab-port) {
         grid-column: 2 / 3;
     }
 }

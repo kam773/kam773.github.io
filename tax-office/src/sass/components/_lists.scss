@@ -1,12 +1,12 @@
 .section-list {
     list-style-type: circle;
     margin-top: 2rem;
-
-    @include respond(tab-port) {      
+    width: 70%;
+    @include respond(tab-port) {
         margin: 0 auto;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
         margin: 0 auto;
     }
 }

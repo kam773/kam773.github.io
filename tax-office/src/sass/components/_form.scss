@@ -1,13 +1,15 @@
 .contact-form {
     float: right;
-    margin-right: 10rem;
+    padding-right: 10rem;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
        float: none;
-    }
 
-    @include respond(phone) {      
+    }
+    @include respond(phone) {
         float: none;
+        margin: 0 auto;
+        padding-right: 0;
     }
 }
 
@@ -21,26 +23,35 @@ input[type="email"] {
     padding: 12px 15px;
     margin-bottom: 30px;
 }
-input[type="submit"] {
-    background: lightblue;
-    border: 1px solid #fff;
-    color: #333;
-    width: 40rem;
-    padding: 1.5rem;
-    transition: 0.3s background linear;
-    font-weight: bold;
-}
-input[type="submit"]:hover {
-    background: #000;
-    border-color: #000;
-    transition: 0.3s background linear;
-    color: #fff;
-    cursor: pointer;
-}
 
 textarea {
     width: 40rem;
     height: 15rem;
     margin-bottom: 5rem;
     padding: 12px 15px;
+    margin: 0 auto;
+    display: block;
+    resize: none;
+}
+
+button[type="submit"] {
+    padding: 2rem 3rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s;
+    margin-top: 1rem;
+    &:hover {
+        background-color: #fff;
+        color: #333;
+        border: 2px solid #333;
+    }
+    @include respond(phone) {
+        display: block;
+        margin: 0 auto;
+
+    }
+
 }

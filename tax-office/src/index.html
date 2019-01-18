@@ -6,22 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Shadows+Into+Light" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-    <title>Biuro rachunkowe Elżbieta Kałużna</title>
-    <meta name="keywords" content="podatki, kadry, doradztwo, Biuro Rachunkowe">
-    <meta name="description" content="Biuro rachunkowe Elżbieta Kałużna">
+    <title>Document</title>
 </head>
 <body>
     <header>
         <div class="bg-img">
                 <img src="./img/bg-img.jpeg" alt="Background image">
-        </div>    
+        </div>
+        <a href="javascript:" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
         <nav class="navigation">
-                <div class="toggle">
-                        <a href="#">&#9776;</a>
-                </div>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#about">o firmie</a></li>
                     <li class="nav-item"><a href="#service">nasza oferta</a></li>
@@ -29,10 +24,22 @@
                     <li class="nav-item"><a href="#contact">mapa dojazdu</a></li>
                     <li class="nav-item"><a href="#contact">kontakt</a></li>
                 </ul>
+                <ul class="mobile">
+                    <li class="mobile__item first"><a href="#about">1. o firmie</a></li>
+                    <li class="mobile__item"><a href="#service">2. nasza oferta</a></li>
+                    <li class="mobile__item"><a href="#tariff">3. cennik</a></li>
+                    <li class="mobile__item"><a href="#contact">4. mapa dojazdu</a></li>
+                    <li class="mobile__item"><a href="#contact">5. kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </div>
         </nav>
         <div class="text-wrapper">
                 <h1 class="header-primary">Biuro rachunkowe</h1>
-                <h4 class="header-secondary">Elżbieta Kałużna</h4>                          
+                <h4 class="header-secondary">Elżbieta Kałużna</h4>
         </div>
         <div class="cta">
                 <a href="#contact" class="btn"><span>Skontaktuj się z nami</span></a>
@@ -89,28 +96,7 @@
                             <li>Odzyskiwanie podatku VAT za materiały budowlane (VZM)</li>
                         </ul>
                 </div>
-                <div class="box box-3">
-                        <img class="box-img" src="./img/consulting.png" alt="Kalkulator">
-                        <h2 class="margin-top-small margin-bottom-small">Doradztwo</h2>
-                        <ul class="section-list">
-                            <li>
-                                    Porady w zakresie zmniejszania obciążeń podatkowych i ZUS-owskich</li>
-                            <li>
-                                    Sporządzanie wniosków kredytowych</li>
-                            <li>
-                                    Sporządzanie sprawozdań dla GUS</li>
-                            <li>
-                                    Rozliczanie klientów indywidualnych z osiągniętych dochodów (PIT – 28,36,37)</li>
-                            <li>
-                                    Konsultacje i doradztwo w sprawach prowadzenia firmy – czyli kompleksowa obsługa osób prawnych i fizycznych</li>
-                            <li>
-                                    Opracowanie dokumentów oraz rejestracja firm we wszystkich formach własności,</li>
-                            <li>
-                                    Kontrola rozrachunków.</li>
-                        </ul>
-                </div>
         </div>
-       
     </section>
     <section class="tariff" id="tariff">
             <div class="u-center-text margin-top-medium margin-bottom-medium">
@@ -118,7 +104,7 @@
             </div>
         <div class="img-left">
                 <h3>W zależności od rodzaju prowadzonej działalności, formy opodatkowania, a także ilości zatrudnionych pracowników, cena usługi za miesiąc obsługi ustalana jest ryczałtowo, odrębnie dla każdego klienta.</h3>
-               
+
         </div>
         <div class="content-right">
                 <h3 class="margin-bottom-medium">Obsługa miesięczna obejmuje:</h3>
@@ -151,14 +137,20 @@
             </div>
         </div>
         <div class="contact-form">
-                <form class="form-group" action="" method="post" enctype="text/plain">                
-                    <input type="text" name="name" placeholder="Imię" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <div class="text-box">
-                        <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
-                    </div>
-                    <input type="submit" value="Submit">
-                </form>
+            <form id="contact" action="" method="post">
+                <div class="form-group">
+                  <input placeholder="Imię" type="text" required>
+                </div>
+                <div class="form-group">
+                  <input placeholder="Email" type="email" required>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Wiadomość" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button name="submit" type="submit" class="btn">Wyślij</button>
+                </div>
+              </form>
         </div>
     </section>
     <footer class="footer">
@@ -166,38 +158,7 @@
                 Copyright &#9400; 2018. Biuro rachunkowe Elżbieta Kałużna.
             </div>
     </footer>
-    <script src="js/script.js"></script>      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow12.png" />',
-        controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);
-        t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,
-        s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,
-        this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},
-        init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),
-        o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),
-        document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
-        
-    <script>
-        $(function() { $('a[href*="#"]:not([href="#"])').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) { var target = $(this.hash); target = target.length ? target : $('[name='
-        + this.hash.slice(1) +']'); if (target.length) { $('html, body').animate({ scrollTop: target.offset().top }, 500);
-        return false; } } }); }); $(window).on("scroll", function() { if($(window).scrollTop()) { $('nav').addClass('sticky');
-        } else { $('nav').removeClass('sticky'); } });       
-    </script>
-    <script type="text/javascript">
-        $(window).on('scroll', function() {
-            if($(window).scrollTop()) {
-                $('nav').addClass('black');
-            } else {
-                $('nav').removeClass('black');
-            }
-        })
-
-        $(document).ready(function() {
-            $('.toggle').click( function() {
-                $('.nav-list').slideToggle(500);
-            });
-        });
-    </script>   
+    <script src="js/script.js"></script>
 </body>
 </html>

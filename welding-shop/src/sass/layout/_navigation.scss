@@ -45,70 +45,58 @@ a.link {
     }
 }
 
-.navigation.black .nav-list li a.link {
-    padding: 4rem 5rem;
+/* Mobile navigantion*/
+.toggle {
+    width: 100%;
+    padding: 2rem 2rem;
+    text-align: right;
+    box-sizing: border-box;
+    display: none;
 }
 
-.nav-list li {
+.toggle a {
+    text-decoration: none;
     color: #000;
-    display: inline-block;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 400;
+    font-size: 4rem;
 
 }
 
-.nav-tabs .tab-1 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+@media (max-width: 600px) {
 
-.nav-tabs .tab-2 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+    .toggle {
+        display: block;
+    }
 
-.nav-tabs .tab-3 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+    .nav-list li {
+        display: block;
+        text-align: center;
+        float: none;
+        padding: 2rem;
+        margin: 0 auto;
+        color: #000;
+    }
+    .nav-list {
+        background-color: #fff;
+    }
 
-.nav-tabs .tab-4 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+    .active {
+        display: block;
+    }
+    .nav-item a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
+        transition: .5s;
 
-.nav-tabs .tab-5 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
 
-.nav-tabs .tab-6 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
+    .navigation.black {
+        background-color: rgba(0, 0, 0, 1);
+        height: 10rem;
+    }
 
-.nav-tabs .tab-7 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
-
-.nav-tabs .tab-8 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
-
-.nav-tabs .tab-9 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
-
-.nav-tabs .tab-10 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
-}
-
-.nav-tabs .tab-11 .nav-link.active {
-    background-color: rgb(41, 41, 40);
-    color: #fff;
 }

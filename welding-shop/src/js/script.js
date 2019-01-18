@@ -1,11 +1,37 @@
+/* Toggle naviagtion on scroll*/
 $(window).on('scroll', function() {
     if($(window).scrollTop()) {
         $('nav').addClass('black');
     } else {
         $('nav').removeClass('black');
     }
-})
+});
 
+/* Toggle menu */
+$(document).ready(function() {
+    $('.toggle').click( function() {
+        $('.nav-list').slideToggle(500);
+    });
+});
+
+/* ScrollTop arrow*/
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        $('#return-to-top').fadeOut(200);
+    }
+});
+
+
+$('#return-to-top').click(function() {
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+});
+
+
+/* JavaScript slider*/
 $(document).ready(function() {
 
     $('.slider').slick({
@@ -90,8 +116,8 @@ $(document).ready(function() {
 
 });
 
+/* ScrollTo*/
 $('a[href*="#"]')
-
   .not('[href="#"]')
   .not('[href="#0"]')
   .not('[href="#urzadzenia"]')
@@ -137,22 +163,4 @@ $('a[href*="#"]')
     }
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {
-        $('#return-to-top').fadeIn(200);
-    } else {
-        $('#return-to-top').fadeOut(200);
-    }
-});
-$('#return-to-top').click(function() {
-    $('body,html').animate({
-        scrollTop : 0
-    }, 500);
-});
 
-// Oferta
-$(document).ready(function() {
-
-
-
-});

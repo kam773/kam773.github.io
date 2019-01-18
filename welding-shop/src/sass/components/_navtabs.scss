@@ -1,0 +1,80 @@
+
+.navigation.black .nav-list li a.link {
+    padding: 4rem 5rem;
+}
+
+.nav-list li {
+    color: #000;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.nav-tabs .tab-1 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-2 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-3 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-4 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-5 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-6 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-7 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-8 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-9 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-10 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+.nav-tabs .tab-11 .nav-link.active {
+    background-color: rgb(41, 41, 40);
+    color: #fff;
+}
+
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto;
+}

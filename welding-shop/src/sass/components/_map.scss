@@ -1,10 +1,17 @@
-.map {
-    #map {
-        width: 50rem;
-        text-align: center;
+.map-small {
+    display: none;
 
-        @include respond(phone) {
-            width: 30rem;
-        }
+    @include respond(phone) {
+        display: block;
+        padding-left: 5rem;
+    }
+}
+
+.map-big {
+    display: block;
+
+    @include respond(phone) {
+        display: none;
+
     }
 }

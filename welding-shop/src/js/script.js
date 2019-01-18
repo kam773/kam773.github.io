@@ -8,12 +8,11 @@ $(window).on('scroll', function() {
 });
 
 /* Toggle menu */
-$(document).ready(function() {
-    $('.toggle').click( function() {
-        $('.nav-list').slideToggle(500);
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+        $(".mobile").slideToggle(500);
     });
 });
-
 /* ScrollTop arrow*/
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {
@@ -50,7 +49,31 @@ $(document).ready(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+]
 
     });
 

@@ -1,15 +1,15 @@
 .footer {
     width: 100%;
-    height: 7rem;
+    height: auto;
     background-color: #000;
     margin-top: 3rem;
     clear: both;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
        clear: none;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
         clear: none;
     }
 }

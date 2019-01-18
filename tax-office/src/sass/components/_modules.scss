@@ -22,12 +22,12 @@
     margin-left: 8rem;
     width: 40rem;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
         float: none;
         margin: 0 auto;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
         float: none;
         margin: 0 auto;
     }
@@ -46,12 +46,12 @@
     margin-right: 8rem;
     font-size: 1.6rem;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
        float: none;
        margin: 0 auto;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
         float: none;
         margin: 0 auto;
     }
@@ -66,11 +66,11 @@
 .map-wrapper {
     float: left;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
         float: none;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
        float: none;
     }
 }
@@ -81,20 +81,21 @@
     margin-left: 3rem;
     margin-bottom: 4rem;
 
-    @include respond(tab-port) {      
+    @include respond(tab-port) {
         width: 40rem;
         height: 30rem;
         margin-left: 3rem;
         margin-bottom: 5rem;
     }
 
-    @include respond(phone) {      
+    @include respond(phone) {
        display: none;
     }
 }
 
 .contact {
     width: 100%;
+    height: auto;
 }
 
 .contact-info {

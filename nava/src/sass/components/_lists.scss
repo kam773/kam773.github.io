@@ -1,0 +1,123 @@
+// LISTS
+.location-list,
+.features-list,
+.newsletter-list,
+.contact-list {
+    list-style-type: none;
+    padding: 1rem 0;
+
+    @include respond(phone) {
+        display: block;
+    }
+
+}
+
+.location-list li a,
+.features-list li a,
+.newsletter-list li a,
+.contact-list li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.4;
+    letter-spacing: 0.56px;
+    text-align: center;
+}
+
+.newsletter-list li {
+    display: inline-block;
+    margin: 2rem .5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: var(--color-section-text);
+    border-radius: 50%;
+    position: relative;
+    transition: background-color .3s;
+
+    @include respond(tab-port) {
+        margin: 6rem 1rem;
+        text-align: right;
+        margin-bottom: 0!important;
+    }
+
+    @include respond(phone) {
+        margin: 6rem 1rem;
+        text-align: right;
+        margin-bottom: 0!important;
+    }
+}
+
+.newsletter-list li:hover {
+    background-color: var(--color-social-media);
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    display: inline-block;
+    padding: 3rem 5rem;
+    position: relative;
+    text-align: center;
+}
+
+.info-list li:first-of-type {
+   padding-left: 2rem;
+   padding-right: 3rem;
+
+}
+.info-list li .item-title {
+    color: var(--color-section-header);
+    font-family: var(--font-secondary);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-top: 1.5rem;
+    text-align: center;
+
+}
+
+.info-list li .item-description {
+    color: var(--color-section-text);
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.36px;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.info-list li span {
+    width: 1px;
+    background-color: var(--color-section-text);
+    opacity: 0.3;
+
+}
+
+ul li span:before{
+    content: '';
+    position: absolute;
+    border-left: 1px solid;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: -1;
+    height: 80%;
+}
+
+// SOCIAL MEDIA
+a.social-link {
+    text-align: center;
+    padding-top: 8px;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

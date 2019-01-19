@@ -1,0 +1,54 @@
+:root {
+    --color-primary: #e7434e;
+    --color-primary-dark: #860303;
+
+    --color-header: #f9fafe;
+
+    --color-section-header: #343435;
+    --color-section-text: #717171;
+
+    --color-white: #ffffff;
+
+    --color-footer: #404040;
+
+    --color-border: #721212;
+
+    --color-social-media: #000000;
+
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary:  'Raleway', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @include respond(tab-land) {
+        font-size: 56.25%;   // 1rem = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;   // 1rem  = 12px
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}

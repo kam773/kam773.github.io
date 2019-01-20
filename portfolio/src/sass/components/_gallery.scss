@@ -1,0 +1,43 @@
+.gallery_product {
+    margin-bottom: 30px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.cta {
+    position: relative;
+    margin-top: 7rem;
+    a {
+        text-decoration: none;
+        color: $color-text;
+        border: 2px solid $color-text;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        transition: all .3s;
+        margin: 0 2rem;
+        &:hover {
+            text-decoration: none;
+            color: $color-white;
+            background-color: $color-text;
+        }
+        @include respond(tab-port) {
+
+        }
+        @include respond(phone) {
+            padding: .5rem 1rem;
+            font-size: .8rem;
+        }
+    }
+    @include respond(phone) {
+       margin-top: 3rem;
+    }
+
+}
+
+.description-wrapper {
+    text-align: center;
+    font-weight: 400;
+}

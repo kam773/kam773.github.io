@@ -1,86 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Kamil Smas</title>
+    <meta name="description" content="Hello, my name is Kamil I'm Front-End Developer and this is my portfolio website">
+    <meta name="author" content="Kamil Smas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../favicon/favicon-16x16.png">
+    <link rel="manifest" href="./../favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
-    
-    <link rel="stylesheet" href="css/main.css">
-    <title>Portfolio - Kamil Smas</title>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127523980-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-127523980-1');
+    </script>
 </head>
-    <body id="bg-img">
-        <header>
-          <div  class="open">
-            <span class="cls"></span>
-            <span>
-              <ul class="sub-menu ">
-                <li>
-                  <a href="index.html" title="about">Home</a>
-                </li>
-                <li>
-                  <a href="about.html" title="skills">About</a>
-                </li>
-                <li>
-                  <a href="work.html" title="jobs">My Work</a>
-                </li>
-                <li>
-                  <a href="contact.html" title="contact">Contact</a>
-                </li>
-              </ul>
-            </span>
-            <span class="cls"></span>
-          </div>
-        </header>
-      
-        <main id="home">
-          <h1 class="lg-heading">
-            Kamil
-            <span class="text-secondary">Smas</span>
-          </h1>
-          <div class="horizontal-line"></div>
-          <h2 class="sm-heading">
-            Front-End Developer
-          </h2>
-          <div class="icons">
-            <a href="https://twitter.com/kamil_smas" target="_blank">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="https://codepen.io/kam773/" target="_blank">
-              <i class="fab fa-codepen fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kamilsmas/" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/kam773" target="_blank">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-          </div>
-        </main>
-        <script
-			  src="https://code.jquery.com/jquery-2.2.4.min.js"
-			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			  crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+<body>
+        <div id="loader-wrapper">
+                <div id="loader"></div>
+
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+
+        </div>
+    <header class="header" id="home">
+            <video autoplay muted loop id="video">
+                    <source src="video/bg-video.mp4" type="video/mp4">
+            </video>
+            <nav class="navigation">
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                            <img src="./img/logo.png" alt="Logo">
+                    </div>
+                    <div class="menu">
+                        <ul class="nav-list">
+                            <li class="list-item"><a class="btn" href="#home">Home</a></li>
+                            <li class="list-item"><a class="btn" href="#about">About</a></li>
+                            <li class="list-item"><a class="btn" href="#service">Service</a></li>
+                            <li class="list-item"><a class="btn" href="#work">My work</a></li>
+                            <li class="list-item"><a class="btn" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+            </nav>
+            <div class="text-overlay">
+                <h1 class="name">Kamil Smas</h1>
+                <div class="animation-wrapper">
+                        <p class="description line typewriter-anim">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="cta-top">
+                    <a href="#" class="scroll js--scroll-to-about">
+                        <span class="dot dot-anim"></span>
+                    </a>
+            </div>
+
+    </header>
+    <section class="about js--section-about" id="about">
+            <div class="about__text">
+                <h1>Hello!</h1>
+                <p>I am a Front-End Developer with solid background.
+                     My skillset focuses mainly on technologies including HTML, CSS and JavaScript.
+                     I enjoy building small and functional websites to rich interactive web apps.
+                     If you are employer looking to hire you can get in touch with me.</p>
+            </div>
+            <div class="about__social">
+                <ul>
+                    <li>
+                    <div class='icon social gh'>
+                        <a href="https://twitter.com/kamil_smas" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    </li>
+                    <li>
+                        <div class='icon social tw'>
+                                <a href="https://codepen.io/kam773/" target="_blank">
+                                    <i class="fab fa-codepen"></i>
+                                </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='icon social in'>
+                                <a href="https://www.linkedin.com/in/kamilsmas/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='icon social cp'>
+                                <a href="https://github.com/kam773" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <section class="service" id="service">
+                <div class="section-title">
+                    <h2 class="title">My Services</h2>
+                </div>
+                <div class="service__grid">
+                    <div class="service box-1">
+                        <div class="service-icon">
+                                <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="service-description">
+                            <h4>PSD to HTML</h4>
+                                <p>
+                                Having ready PSD mockup I am able to convert it to fully functional HTML, CSS, Javascript template including RWD</p>
+                            </div>
+
+                    </div>
+                    <div class="service box-2">
+                            <div class="service-icon">
+                                    <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="service-description">
+                                    <h4>Web Development</h4>
+                                <p>
+                                Client-side scripting using JavaScript and it's libraries such as jQuery</p>
+                            </div>
+                            <div class="v-line"></div>
+                    </div>
+                    <div class="service box-3">
+                            <div class="service-icon">
+                                    <i class="fab fa-react"></i>
+                            </div>
+                            <div class="service-description">
+                                    <h4>React</h4>
+                                <p>Creating encapsulated components and compose them to make complex interactive UIs</p>
+                            </div>
+                            <div class="v-line"></div>
+                    </div>
+
+                </div>
+    </section>
+    <section id="work">
+            <div class="section-title">
+                    <h2 class="title">My Portfolio</h2>
+            </div>
+
+            <div class="container">
+                    <div class="row">
+                    <div align="center">
+                        <button class="filter-button" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="hdpe">Websites</button>
+                        <button class="filter-button" data-filter="sprinkle">Web Apps</button>
+                        <button class="filter-button" data-filter="spray">Commercial</button>
+                    </div>
+                    <br/>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                            <img src="img/gratia shcreenshot.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                        Gratia
+                                    </h4>
+                                    <p class="project-description">
+                                        Multi-page PSD to HTML, CSS conversion
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://kam773.github.io/gratia/dist/" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/gratia-website" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                            <img src="img/bags screenshot.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                       Bag Shop
+                                    </h4>
+                                    <p class="project-description">
+                                        Bootstrap 4 website
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://kam773.github.io/bags-world/dist/" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/bag-shop-website" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                            <img src="img/nava screenshot.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                       Nava
+                                    </h4>
+                                    <p class="project-description">
+                                        Single-page PSD to HTML, CSS
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://kam773.github.io//nava/dist" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/kam773.github.io/tree/master/nava" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                            <img src="img/biuro.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                       Tax-office
+                                    </h4>
+                                    <p class="project-description">
+                                        Project for local business
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://kam773.github.io/tax-office/dist/" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/kam773.github.io/tree/master/tax-office" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                            <img src="img/manager.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                       Project Manager
+                                    </h4>
+                                    <p class="project-description">
+                                        Stack: React + Redux + Firebase
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://project-manager-3901e.firebaseapp.com/signin" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/project-manager" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                            <img src="img/Budget.png" class="img-responsive">
+                            <div class="description-wrapper">
+                                    <h4 class="project-name">
+                                       Budget App
+                                    </h4>
+                                    <p class="project-description">
+                                        vanilla JavaScript
+                                    </p>
+                                    <div class="cta">
+                                            <a href="https://kam773.github.io/budget-app/" target="_blank">Demo</a>
+                                            <a href="https://github.com/kam773/budget-app" target="_blank">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <section id="contact">
+            <div class="section-title">
+                    <h2 class="title">Contact Me</h2>
+            </div>
+                <div class="center">
+                        <form id="contact-form" action="mail/contact.php" method="POST">
+                            <div class="col-sm-6 input-wrapper">
+                                    <input type="text" name="name" id="name" class="input-field" required="required" placeholder="Name">
+                            </div>
+                            <div class="col-sm-6 input-wrapper">
+                                    <input type="email" name="email" id="email" class="input-field" required="required" placeholder="Email">
+                            </div>
+                            <div class="col-xs-12 input-wrapper">
+                                    <textarea name="message" id="message" class="input-field" required="required" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="effect submit-btn">Send Message</button>
+                        </form>
+                </div>
+    </section>
+    <footer id="footer">
+        <div class="footer__inner">
+                <div class="footer__logo">
+                        <img src="./img/logo.png" alt="Logo Footer">
+                    </div>
+                    <div class="footer__social">
+                            <ul class="social-list">
+                                    <li>
+                                        <a href="https://twitter.com/kamil_smas" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://codepen.io/kam773/" target="_blank">
+                                            <i class="fab fa-codepen"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/kamilsmas/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/kam773" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </li>
+                            </ul>
+                    </div>
+                    <div class="footer__text">
+                            <p>Kamil Smas &copy; 2019. All Right Reserved.</p>
+                    </div>
+        </div>
+
+    </footer>
+<script src="js/scripts.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

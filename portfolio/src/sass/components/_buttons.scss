@@ -1,0 +1,84 @@
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid $color-header;
+    outline: none;
+    background-color: $color-header;
+    font-family: 'Lato', sans-serif;
+    color: #fafafa;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover {
+        background-color: $color-white;
+        color: $color-header;
+    }
+}
+
+.filter-button {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid $color-header;
+    outline: none;
+    background-color: $color-white;
+    font-family: 'Lato', sans-serif;
+    color: $color-header;
+    border-radius: 1rem;
+    &:focus {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 8px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 2px solid $color-header;
+        outline: none;
+        background-color: $color-header;
+        font-family: 'Lato', sans-serif;
+        color: $color-white;
+        border-radius: 1rem;
+    }
+    @include respond(tab-port) {
+
+    }
+    @include respond(phone) {
+        display: block;
+        margin-top: .5rem;
+    }
+}
+
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.cta-top {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scroll {
+    display: block;
+    height: 4rem;
+    width: 2.6rem;
+    border: 2px solid #efefef;
+    border-radius: 1.4rem;
+    position: relative;
+    .dot {
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: #efefef;
+        border-radius: 50%;
+        @include absCenter;
+    }
+}
+
+.btn-group {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    #video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        filter: brightness(40%);
+    }
+    .text-overlay {
+        @include absCenter;
+        .name {
+            color: $color-navigation!important;
+            font-size: 8rem;
+            line-height: 1.1;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+
+            @include respond(tab-port) {
+                font-size: 5rem;
+            }
+            @include respond(phone) {
+                font-size: 3rem;
+            }
+        }
+        .description {
+            color: $color-navigation;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            line-height: 1.1;
+            font-weight: 300;
+            text-align: center;
+
+            @include respond(tab-port) {
+                font-size: 2rem!important;
+            }
+            @include respond(phone) {
+                font-size: 1.6rem!important;
+            }
+        }
+        .line {
+            position: relative;
+            top: 50%;
+            width: 9em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255, 255, 255, .75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+        .animation-wrapper {
+            margin-top: 4rem;
+        }
+    }
+
+}

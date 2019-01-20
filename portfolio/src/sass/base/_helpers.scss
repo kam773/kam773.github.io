@@ -1,0 +1,23 @@
+.fa-js-square,
+.fa-html5,
+.fa-react {
+    font-size: 10rem;
+    color: $color-header;
+    padding: 2rem;
+}
+
+.center {
+    display: inline-block;
+    margin-top: 7rem;
+
+}
+
+.v-line {
+    display: block;
+    border-left: 1px solid $color-text;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: -12%;
+
+}

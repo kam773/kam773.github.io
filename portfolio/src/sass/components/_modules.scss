@@ -1,0 +1,174 @@
+.about {
+    height: 50rem;
+    width: 100%;
+
+    &__text {
+        width: 40%;
+        height: 10rem;
+        margin-left: 8rem;
+        margin-top: 10rem;
+        h1 {
+            font-size: 3rem;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            color: $color-header;
+        }
+        p {
+            font-size: 2rem;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 2.6rem;
+            margin-top: 5rem;
+            color: $color-text;
+        }
+        @include respond(tab-port) {
+            margin-left: 4rem;
+            margin-top: 3rem;
+            width: 60%;
+        }
+        @include respond(phone) {
+            margin-left: 2rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+    }
+    &__social {
+        height: 5rem;
+        width: 40%;
+        position: relative;
+        top: 15rem;
+        left: 7rem;
+        ul {
+            list-style: none;
+            li {
+                margin: 1rem;
+                display: inline-block;
+                text-align:center;
+                font-size: 2.5rem;
+                a {
+                    color:#000;
+                    padding: 5px 10px;
+                    border: 1px solid #888;
+                    border-radius: 50%;
+                    transition: .3s all;
+                    &:hover {
+                        color: #fff;
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+        @include respond(tab-port) {
+            top:22rem;
+            width: 90%;
+
+        }
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+            left: 10rem;
+        }
+    }
+}
+
+.service {
+    width: 100%;
+    height: auto;
+    background-color: $color-service;
+    .section-title {
+        text-align: center;
+        h2 {
+            font-size: 3.6rem;
+            color: $color-header;
+            font-family: 'Lato', sans-serif;
+            padding-top: 7rem;
+        }
+    }
+}
+
+#work {
+    width: 100%;
+    .section-title {
+        text-align: center;
+        h2 {
+            font-size: 3.6rem;
+            color: $color-header;
+            font-family: 'Lato', sans-serif;
+            padding-top: 7rem;
+        }
+    }
+    .container {
+        padding-top: 7rem;
+    }
+}
+
+.portfolioFilter a {
+    margin-right: 6px;
+    color: #666;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 4px 15px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.portfolioFilter a.current {
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #f9f9f9;
+}
+
+.portfolioContainer {
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+img {
+    margin: 5px;
+    max-width: 100%;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+      /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+    .section-title {
+        text-align: center;
+        h2 {
+            font-size: 3.6rem;
+            color: $color-header;
+            font-family: 'Lato', sans-serif;
+            padding-top: 7rem;
+        }
+    }
+}

@@ -1,0 +1,152 @@
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+
+}
+
+.navigation {
+    height: 12rem;
+    transition: 1s;
+
+}
+
+.navigation.white {
+    height: 10rem;
+    width: 100%;
+    background-color: #000;
+    opacity: .85;
+    color: $color-navigation;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    img {
+        height: 8rem;
+        width: 8rem;
+
+    }
+}
+
+.navigation.white .logo {
+    float: left;
+    img {
+        height: 8rem;
+        width: 8rem;
+
+    }
+}
+
+.menu {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+    padding-top: 1.5rem;
+    transition: all .5s;
+    overflow: hidden;
+    .list-item {
+        display: inline-block;
+        padding: 2.5rem;
+        a {
+            text-decoration: none;
+            color: $color-navigation;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            @include respond(tab-port) {
+                font-size: 1.6rem;
+            }
+        }
+        @include respond(tab-port) {
+            padding: 1rem;
+        }
+    }
+}
+
+.navigation.white ul {
+    li {
+        display: inline-block;
+        padding: 2.5rem;
+        a {
+            text-decoration: none;
+            color: $color-navigation;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+
+    .nav-list {
+        padding-top: 0;
+    }
+
+    .navigation.white {
+        height: 10rem;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+
+    }
+    nav ul {
+        max-height: 0;
+        background: #000;
+    }
+
+    nav.white ul {
+        background: #000;
+        padding: 0;
+    }
+
+    .showing {
+        max-height: 20em;
+
+    }
+
+    nav ul li {
+       box-sizing: border-box;
+       width: 100%;
+       padding: 24px 0;
+       text-align: center;
+    }
+
+    .navigation.white ul {
+        li {
+            display: inline-block;
+            padding:1rem;
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

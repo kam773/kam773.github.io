@@ -234,13 +234,19 @@ p.text-dark {
   margin-top: 3rem;
   margin-bottom: 2rem;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .dropdown-wrapper {
+      margin-left: 25%; } }
+  @media only screen and (max-width: 37.5em) {
+    .dropdown-wrapper {
+      margin-left: 25%; } }
 
 .dropdown {
   height: 4rem;
   width: 25rem; }
 
 .helper {
-  padding-top: 2.5rem;
+  padding: 2.5rem 0;
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center; }
@@ -288,6 +294,9 @@ p.text-dark {
 
 .navbar ul {
   margin-left: 5rem; }
+
+.navbar.fixed-top ul {
+  padding-left: 15rem; }
 
 /* Top left slider */
 .slider-left {
@@ -793,6 +802,10 @@ a[type="button"] {
   color: #fff;
   font-size: 1.1rem;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-pink {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .action {
   text-align: center;
@@ -962,10 +975,8 @@ a.go-to-blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -973,36 +984,28 @@ a.go-to-blog {
 .search-wrapper {
   margin-top: 3rem;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .search-wrapper {
+      margin-bottom: 2rem; } }
 
-input[type="text"] {
+input.search-input {
   height: 4rem;
   width: 85%;
   font-size: 1.6rem; }
   @media only screen and (max-width: 75em) {
-    input[type="text"] {
+    input.search-input {
       width: 80%; } }
   @media only screen and (max-width: 56.25em) {
-    input[type="text"] {
+    input.search-input {
       width: 80%; } }
   @media only screen and (max-width: 37.5em) {
-    input[type="text"] {
-      width: 91%; } }
+    input.search-input {
+      width: 80%; } }
 
-input[type="text"]::-webkit-input-placeholder {
-  padding-left: 2rem;
-  font-size: 1.6rem; }
-
-input[type="text"]::-ms-input-placeholder {
-  padding-left: 2rem;
-  font-size: 1.6rem; }
-
-input[type="text"]::placeholder {
-  padding-left: 2rem;
-  font-size: 1.6rem; }
-
-input[type="text"] {
+input.search-input {
   height: 4rem;
-  width: 85%; }
+  width: 85%;
+  padding-left: 2rem; }
 
 .subscribe {
   display: -webkit-box;

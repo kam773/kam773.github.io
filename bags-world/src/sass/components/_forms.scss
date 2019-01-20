@@ -1,43 +1,43 @@
 .form-inline {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
     align-items: center;
 }
 
 .search-wrapper {
     margin-top: 3rem;
     width: 100%;
+    @include respond(phone) {
+        margin-bottom: 2rem;
+
+    }
 }
 
-input[type="text"] {
+input.search-input {
     height: 4rem;
     width: 85%;
     font-size: 1.6rem;
 
     @include respond(tab-land) {
         width: 80%;
-        
+
     }
 
     @include respond(tab-port) {
         width: 80%;
-        
+
     }
 
     @include respond(phone) {
-        width: 91%;
-        
+        width: 80%;
+
     }
 }
 
-input[type="text"]::placeholder {
-    padding-left: 2rem;
-    font-size: 1.6rem;
-}
-
-input[type="text"] {
+input.search-input {
     height: 4rem;
     width: 85%;
+    padding-left: 2rem;
 }
 
 .subscribe {

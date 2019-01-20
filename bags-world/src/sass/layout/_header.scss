@@ -17,17 +17,27 @@
 
 .dropdown-wrapper {
     margin-top: 3rem;
-    margin-bottom: 2rem; 
-    cursor: pointer;   
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+        margin-left: 25%;
+     }
+
+    @include respond(phone) {
+       margin-left: 25%;
+    }
+
 }
 
 .dropdown {
     height: 4rem;
     width: 25rem;
+
 }
 
 .helper {
-    padding-top: 2.5rem;
+    padding: 2.5rem 0;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;

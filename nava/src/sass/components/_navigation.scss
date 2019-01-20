@@ -52,7 +52,6 @@
     width: 100%;
     background: #000;
     color: #fff;
-    text-align: right;
     padding: 2.4rem 1.5rem;
     cursor: pointer;
     display: none;
@@ -63,9 +62,7 @@
         display: none;
     }
     .logo {
-        position: fixed;
-        top: 0;
-        padding: 2rem;
+       display: none;
     }
     .menu {
         background-color: #000;

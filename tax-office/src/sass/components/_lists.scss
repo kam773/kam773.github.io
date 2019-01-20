@@ -2,6 +2,7 @@
     list-style-type: circle;
     margin-top: 2rem;
     width: 70%;
+    display: block!important;
     @include respond(tab-port) {
         margin: 0 auto;
     }

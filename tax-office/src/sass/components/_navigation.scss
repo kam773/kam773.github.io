@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: 1s;
     z-index: 3;
 }
 
@@ -29,6 +29,7 @@
 .nav-item a {
     color: #fff;
     text-decoration: none;
+    font-size: 2rem;
     @media all and(min-width: 650px) {
         padding: 3rem 4rem;
         transition: .5s;
@@ -53,7 +54,6 @@
     width: 100%;
     background: #000;
     color: #fff;
-    text-align: right;
     padding: 2.4rem 1.5rem;
     cursor: pointer;
     display: none;

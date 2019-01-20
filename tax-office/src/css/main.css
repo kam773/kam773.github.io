@@ -238,9 +238,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   z-index: 3; }
 
 .navigation.black {
@@ -262,7 +262,8 @@ header {
 
 .nav-item a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 2rem; }
   @media all and (min-width: 650px) {
     .nav-item a {
       padding: 3rem 4rem;
@@ -282,7 +283,6 @@ header {
   width: 100%;
   background: #000;
   color: #fff;
-  text-align: right;
   padding: 2.4rem 1.5rem;
   cursor: pointer;
   display: none; }
@@ -472,7 +472,8 @@ a.btn {
 .section-list {
   list-style-type: circle;
   margin-top: 2rem;
-  width: 70%; }
+  width: 70%;
+  display: block !important; }
   @media only screen and (max-width: 56.25em) {
     .section-list {
       margin: 0 auto; } }

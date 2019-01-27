@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    max-width: 1090px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 8rem 0;
+    @include respond(tab-port) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+    }
+    @include respond(phone) {
+        padding: 1rem 0;
+
+    }
+    .box {
+        width: 23%;
+        height: auto;
+        margin: 0 1%;
+        @include respond(tab-port) {
+           text-align: center;
+           width: 80%;
+           padding-top: 1rem;
+        }
+        &__title {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            color: rgba(0, 0, 0, 255);
+            font-family: $font-primary;
+            font-size: 0.9rem;
+            font-weight: 700;
+            & span {
+                margin-left: 1rem;
+
+            }
+        }
+        &__content p {
+            color: rgba(0, 0, 0, 255);
+            line-height: 1.5;
+            font-family: $font-primary;
+            font-size: 0.8rem;
+        }
+        & h4.description {
+            color: rgba(0, 0, 0, 255);
+            line-height: 1.6;
+            font-family: $font-primary;
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
+    }
+}
+

@@ -1,0 +1,10 @@
+.social-item {
+    margin: 1rem 0;
+    @include respond(tab-port) {
+        display: inline-block;
+        margin: 1rem;
+    }
+    @include respond(phone) {
+        margin: .5rem;
+    }
+}

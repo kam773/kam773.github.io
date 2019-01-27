@@ -1,0 +1,63 @@
+input[name="message"] {
+    width: 95%;
+    outline: none;
+    height: 3rem;
+    border: 0;
+    border-bottom: 1px solid #a3a3a3;
+    font-size: 1.2rem;
+
+}
+
+input[name="name"],
+input[name="email"] {
+    width: 47%;
+    outline: none;
+    height: 3rem;
+    border: 0;
+    border-bottom: 1px solid #a3a3a3;
+    font-size: 1.2rem;
+    @include respond(tab-port) {
+        width: 95%;
+    }
+    @include respond(phone) {
+        width: 95%;
+    }
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+}
+
+
+.form-control {
+    padding: 3rem 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-submit {
+    float: right;
+    border: 0;
+    background-color: transparent;
+    font-weight: 400;
+    margin-right: 2rem;
+    cursor: pointer;
+    img {
+        padding-right: .5rem;
+    }
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    @include respond(tab-port) {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}

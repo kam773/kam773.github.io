@@ -1,0 +1,29 @@
+.btn {
+    border: 1px solid $color-white;
+    padding: .8rem 1rem;
+    border-radius: 50%;
+}
+
+.btn-details {
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font-primary;
+    span {
+        padding-right: 1rem;
+    }
+    &-black {
+        color: $color-black;
+        i {
+            color: $color-underline;
+        }
+    }
+}
+
+.play-btn {
+    @include absCenter;
+    z-index: 3;
+    border: 1px solid $color-white;
+    padding: 1rem;
+    padding-left: 1.2rem;
+    border-radius: 50%;
+}

@@ -1,0 +1,22 @@
+.navToggle {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+    @include respond(tab-port) {
+      top: 20px;
+    }
+    @include respond(phone) {
+      top: 20px;
+
+    }
+      .menu {
+          color: $color-hamburger;
+        }
+      .menuOn {
+           color: $color-hamburger;
+        }
+}
+

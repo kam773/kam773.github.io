@@ -1,0 +1,44 @@
+.box-left {
+    width: 20%;
+    @include respond(tab-port) {
+        width: 90%;
+    }
+}
+
+.box-center {
+    width: 50%;
+    text-align: left;
+    @include respond(tab-port) {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: $font-primary;
+        margin-bottom: 2rem;
+        @include respond(phone) {
+            margin: 1rem 0;
+        }
+    }
+}
+
+.box-right {
+    width: 20%;
+    text-align: left;
+    @include respond(tab-port) {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    background-color: $color-underline;
+    padding: .2rem 0;
+}

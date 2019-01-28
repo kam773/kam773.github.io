@@ -83,6 +83,17 @@
             color: $color-header;
             font-family: 'Lato', sans-serif;
             padding-top: 7rem;
+
+        }
+        .title::after {
+            display: block;
+            content: '';
+            width: 1.8rem;
+            height: 3px;
+            background: $color-header;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
         }
     }
 }
@@ -101,61 +112,6 @@
     .container {
         padding-top: 7rem;
     }
-}
-
-.portfolioFilter a {
-    margin-right: 6px;
-    color: #666;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    padding: 4px 15px;
-    border-radius: 50px;
-    display: inline-block;
-}
-
-.portfolioFilter a.current {
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-    color: #f9f9f9;
-}
-
-.portfolioContainer {
-    border: 1px solid #eee;
-    border-radius: 3px;
-}
-
-img {
-    margin: 5px;
-    max-width: 100%;
-}
-
-.isotope-item {
-    z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
-}
-
-.isotope,
-.isotope .isotope-item {
-      /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-
-.isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
-}
-
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
 }
 
 #contact {

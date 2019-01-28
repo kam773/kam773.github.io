@@ -1,0 +1,71 @@
+.container {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem auto;
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}
+
+.box {
+    width: 50%;
+    @include respond(tab-port) {
+        width: 90%;
+    }
+    @include respond(phone) {
+        width: 90%;
+    }
+}
+
+.img-wrapper {
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    @include respond(phone) {
+        margin-bottom: 5rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    font-family: 1.6rem;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-info > h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: $font-primary;
+}
+
+
+.contact-info > h3 {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+}
+
+.contact-info > p {
+    font-size: 1.6rem;
+    font-family: $font-primary;
+    margin-top: 1rem;
+}

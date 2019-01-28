@@ -1,0 +1,38 @@
+/* color variables*/
+$color-white: #fff;
+$color-black: #000;
+
+
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;   // 1rem = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;   // 1rem  = 12px
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(230, 224, 224);
+}
+

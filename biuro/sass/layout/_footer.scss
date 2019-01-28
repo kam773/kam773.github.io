@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: $color-black;
+    margin-top: 3rem;
+    clear: both;
+
+    @include respond(tab-port) {
+       clear: none;
+    }
+
+    @include respond(phone) {
+        clear: none;
+    }
+}
+
+.footer-inner {
+    color: $color-white;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 2rem 0;
+    font-family: $font-primary;
+    font-weight: 300;
+}

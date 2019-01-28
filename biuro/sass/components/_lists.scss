@@ -1,0 +1,55 @@
+.section-list {
+    list-style-type: circle;
+    margin-top: 2rem;
+    width: 100%;
+    @include respond(tab-port) {
+        margin: 0 auto;
+    }
+
+    @include respond(phone) {
+        margin: 0 auto;
+    }
+}
+
+.section-list > li {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: $font-primary;
+    @include respond(phone) {
+        margin-left: 1rem;
+
+    }
+}
+.section-list {
+   width: 80%;
+   padding-left: 15rem;
+    @include respond(tab-port) {
+        padding-left: 2rem;
+        width: 90%;
+    }
+    @include respond(phone) {
+        padding-left: 2rem;
+        width: 90%;
+    }
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-top: 2rem;
+    font-family: $font-primary;
+}
+
+.tariff-list {
+    list-style-type: circle;
+    font-family: $font-primary;
+}
+
+.tariff-list li {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-left: 2rem;
+    font-family: $font-primary;
+}
+

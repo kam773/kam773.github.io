@@ -1,0 +1,62 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}
+
+.box-img {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box-img img {
+    width: 100%;
+    height: auto;
+}
+.box {
+    text-align: center;
+}
+
+.text-left,
+.text-right {
+    width: 40%;
+    @include respond(tab-port) {
+        width: 80%;
+    }
+    @include respond(phone) {
+        width: 80%;
+    }
+}
+
+.container-flex {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10rem auto;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

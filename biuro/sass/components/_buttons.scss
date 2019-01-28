@@ -1,0 +1,28 @@
+a.btn {
+    background-color: $color-white;
+    color: $color-black;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    font-weight: 700;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
+}
+
+.cta {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}

@@ -1,0 +1,17 @@
+.map-small {
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+        padding-left: 1rem;
+    }
+}
+
+.map-big {
+    display: block;
+    padding-left: 3rem;
+    @include respond(phone) {
+        display: none;
+
+    }
+}

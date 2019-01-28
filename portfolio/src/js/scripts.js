@@ -1,3 +1,12 @@
+// Fixed navbar on scroll
+$(window).on('scroll', function() {
+    if($(window).scrollTop()) {
+        $('nav').addClass('white');
+    } else {
+        $('nav').removeClass('white');
+    }
+});
+
 var loader;
 function loadNow(opacity) {
     if(opacity <= 0) {
@@ -26,15 +35,6 @@ $(document).ready(function(){
     $('.js--scroll-to-about').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-about').offset().top - $('nav').height()}, 1000);
     });
-});
-
-// Fixed navbar on scroll
-$(window).on('scroll', function() {
-    if($(window).scrollTop()) {
-        $('nav').addClass('white');
-    } else {
-        $('nav').removeClass('white');
-    }
 });
 
 // Toggle menu

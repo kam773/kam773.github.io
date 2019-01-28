@@ -83,17 +83,18 @@
             color: $color-header;
             font-family: 'Lato', sans-serif;
             padding-top: 7rem;
+            position: relative;
 
         }
         .title::after {
             display: block;
             content: '';
-            width: 1.8rem;
+            width: 5rem;
             height: 3px;
             background: $color-header;
             position: absolute;
-            bottom: -7px;
-            left: 0;
+            bottom: -5px;
+            left: 43.5%;
         }
     }
 }
@@ -107,8 +108,20 @@
             color: $color-header;
             font-family: 'Lato', sans-serif;
             padding-top: 7rem;
+            position: relative;
+        }
+        .title::after {
+            display: block;
+            content: '';
+            width: 5rem;
+            height: 3px;
+            background: $color-header;
+            position: absolute;
+            bottom: -5px;
+            left: 43.5%;
         }
     }
+
     .container {
         padding-top: 7rem;
     }
@@ -126,6 +139,17 @@
             color: $color-header;
             font-family: 'Lato', sans-serif;
             padding-top: 7rem;
+            position: relative;
+        }
+        .title::after {
+            display: block;
+            content: '';
+            width: 5rem;
+            height: 3px;
+            background: $color-header;
+            position: absolute;
+            bottom: -5px;
+            left: 43.5%;
         }
     }
 }

@@ -1,13 +1,31 @@
+var loader;
+function loadNow(opacity) {
+    if(opacity <= 0) {
+        displayContent();
+    }
+    else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05)
+        }, 100);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});
+
+
 $(document).ready(function(){
     $('.js--scroll-to-about').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-about').offset().top - $('nav').height()}, 1000);
     });
-
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 3000);
-
 });
 
 // Fixed navbar on scroll

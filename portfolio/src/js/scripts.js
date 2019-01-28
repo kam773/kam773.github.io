@@ -1,35 +1,16 @@
 $(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-
-        }
+    $('.js--scroll-to-about').click(function () {
+        $('html, body').animate({scrollTop: $('.js--section-about').offset().top - $('nav').height()}, 1000);
     });
 
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-$('.js--scroll-to-about').click(function () {
-    $('html, body').animate({scrollTop: $('.js--section-about').offset().top - $('nav').height()}, 1000);
-});
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 3000);
 
 });
 
-
+// Fixed navbar on scroll
 $(window).on('scroll', function() {
     if($(window).scrollTop()) {
         $('nav').addClass('white');
@@ -38,6 +19,7 @@ $(window).on('scroll', function() {
     }
 });
 
+// Toggle menu
 $(document).ready(function(){
     $(".menu-icon").on("click", function(){
         $("nav ul.nav-list").toggleClass("showing");
@@ -79,15 +61,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function() {
-
-	setTimeout(function(){
-		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 3000);
-
-});
-
+//Portfolio gallery mixitup plugin
 $(function () {
 
     var filterList = {

@@ -45,9 +45,32 @@
          gtag('js', new Date());
          gtag('config', 'UA-127523980-1');
     </script>
+    <script>
+        var loader;
+        function loadNow(opacity) {
+            if(opacity <= 0) {
+                displayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.05)
+                }, 100);
+            }
+        }
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+    </script>
 </head>
 <body>
 <header class="header">
+    <div id="loader"></div>
     <a name="home"></a>
     <video autoplay muted loop id="video">
         <source src="video/bg-video.mp4" type="video/mp4">

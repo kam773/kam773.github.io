@@ -1,38 +1,62 @@
 .container {
-    position: relative;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-#filters {
-    margin: 1%;
-    padding: 0;
-    list-style: none;
     text-align: center;
 }
 
-#filters li {
-    display: inline-block;
-}
-
-#filters li span {
-    display: block;
-    padding: 5px 20px;
-    text-decoration: none;
+.portfolioFilter a {
+    margin: 0 auto;
     color: #666;
-    cursor: pointer;
-    font-size: 2rem;
-}
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 4px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: $font-primary;
+  }
 
-#filters li span.active {
-    background: $color-header;
-    color: $color-white;
-}
+  .portfolioFilter a.current {
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #f9f9f9;
+  }
+  .portfolioContainer{
+    border: 1px solid #eee;
+    border-radius: 3px;
+  }
+  .isotope-item {
+    z-index: 2;
+  }
 
-#portfoliolist .portfolio {
+  .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .isotope,
+  .isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+
+  .isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+  }
+
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+  }
+
+.portfolio {
     width: 30%;
     margin: 1%;
-    display: none;
     float: left;
     overflow: hidden;
 }
@@ -43,8 +67,7 @@
     background: #666;
     cursor: pointer;
 }
-
-.portfolio img {
+.portfolio-wrapper img {
     max-width: 100%;
     position: relative;
     top: 0;
@@ -73,12 +96,18 @@
     position: relative;
     z-index: 500;
     font-size: 16px;
+    @include respond(phone) {
+        font-size: 12px;
+    }
 }
 
 .portfolio .text-category {
     display: block;
     font-size: 14px;
     padding-bottom: 1rem;
+    @include respond(phone) {
+        font-size: 10px;
+    }
 }
 
 .portfolio:hover .label {
@@ -91,43 +120,6 @@
 
 .portfolio:hover .cta {
     opacity: 1;
-
-}
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.container {
-		width: 768px;
-	}
-}
-
-
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-	.container {
-		width: 95%;
-	}
-
-	#portfoliolist .portfolio {
-		width:48%;
-		margin:1%;
-	}
-
-	#ads {
-		display:none;
-	}
-
-}
-
-
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.container {
-		width: 70%;
-	}
-
-	#ads {
-		display:none;
-	}
 
 }
 
@@ -160,4 +152,31 @@
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px;
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container {
+		width: 95%;
+	}
+
+	.portfolio {
+		width:48%;
+		margin:1%;
+	}
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
 }

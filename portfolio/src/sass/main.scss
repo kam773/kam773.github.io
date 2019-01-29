@@ -1,15 +1,18 @@
 @import "base/mixins";
 @import "base/base";
-@import "base/helpers";
+@import "base/typography";
 @import "base/animations";
+@import "base/helpers";
+
 
 @import "layout/header";
+@import "layout/navigation";
+@import "layout/grid";
 @import "layout/footer";
 
-@import "components/navigation";
+
 @import "components/modules";
-@import "components/grid";
-@import "components/form";
 @import "components/buttons";
 @import "components/gallery";
+@import "components/form";
 @import "components/loader";

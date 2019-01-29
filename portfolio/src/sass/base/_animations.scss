@@ -54,15 +54,18 @@ a {
 }
 .btn {
     padding-top: 10px;
-    &:before {
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 3px;
-      background: $color-navigation;
-      transform:  scaleX(0);
+    @media screen and (min-width: 600px) {
+        &:before {
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 3px;
+            background: $color-navigation;
+            transform:  scaleX(0);
+          }
+          &:hover:before {
+            transform:  scaleX(1);
+          }
     }
-    &:hover:before {
-      transform:  scaleX(1);
-    }
+
 }

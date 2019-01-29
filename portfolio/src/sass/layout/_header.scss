@@ -4,6 +4,7 @@
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    font-family: $font-primary;
     #video {
         position: absolute;
         top: 50%;
@@ -13,9 +14,6 @@
         width: auto;
         height: auto;
         z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
         filter: brightness(40%);
     }
@@ -65,5 +63,4 @@
             margin-top: 4rem;
         }
     }
-
 }

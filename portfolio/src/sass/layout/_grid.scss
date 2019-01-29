@@ -7,18 +7,19 @@
     @include respond(tab-port) {
         grid-template-columns: 1fr repeat(2, 45%) 1fr;
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 3rem;
-        margin-top: 4rem;
+        grid-gap: 2rem;
+        margin-top: 3rem;
     }
     @include respond(phone) {
         grid-template-columns: 1fr 90% 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
         grid-gap: 1rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .service {
         width: 90%;
-        height: 40rem;
+        height: auto;
+        padding-bottom: 5rem;
         text-align: center;
         position: relative;
         .service-description {
@@ -26,7 +27,7 @@
                 h4 {
                     font-size: 2.6rem;
                     color: $color-header;
-                    font-family: 'Lato',sans-serif;
+                    font-family: $font-secondary;
                     text-transform: uppercase;
                     margin-top: 3rem;
 
@@ -34,7 +35,7 @@
                 p {
                     font-size: 1.6rem;
                     color: $color-header;
-                    font-family: 'Lato',sans-serif;
+                    font-family: $font-secondary;
                     margin-top: 3rem;
 
                 }
@@ -76,4 +77,3 @@
         }
     }
 }
-

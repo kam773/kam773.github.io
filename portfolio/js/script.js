@@ -41,6 +41,7 @@ $(function() {
 
 // smooth scrolling
 $('a[href*="#"]')
+.not('[href="#"]')
 .not('[href="#0"]')
       .click(function(event) {
             if (
